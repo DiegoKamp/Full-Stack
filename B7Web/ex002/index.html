@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Formulário</h1>
+
+  <h2>Área de Cadastro</h2>
+  <form action="pagina2/pagina2.html" method="get">
+
+    <label for="nome">
+      Nome completo <br>
+      <input type="text" id="nome">
+    </label>
+
+
+
+    <label for="descricao">
+      Se você pudesse ser ou fazer qualquer coisa, qual seria seu sonho? <br>
+      <textarea id="descricao"></textarea>
+    </label>
+
+    <label for="categoria">
+      Qual categoria se enquadra melhor a você? <br>
+      <select id="categoria">
+        <option value="0" disabled selected>Selecione</option>
+        <option value="1">Categoria 1</option>
+        <option value="2">Categoria 2</option>
+        <option value="3">Categoria 3</option>
+        <option value="4">Categoria 4</option>
+        <option value="5">Categoria 5</option>
+      </select>
+    </label>
+
+    <label for="concordar">
+      <input type="checkbox" id="concordar">
+      Eu declaro que li e aceito os <a href="pagina2/termos.html" target="_blank" class="termos">termos e condições</a>
+    </label>
+
+    <input type="submit" value="Enviar Formulário" class="butao">
+
+  </form>
+
+</body>
+
+</html>

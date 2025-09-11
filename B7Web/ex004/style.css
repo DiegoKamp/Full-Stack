@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+img {
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
+  /*fill distorce a imagem para se adaptar às dimensões especificadas*/
+  /*contain reserva o espaçõ especificado e adapta a imagem para manter às dimensões.*/
+  /*cover corta a imagem (centralizado) nas dimensões especificadas.*/
+  /*none corta a imagem sem redimensioná-la ou centralizá-la.*/
+}
+
+body {
+  background-color: black;
+}
+
+@media (min-width: 1000px) {
+  body {
+    background-color: gray;
+  }
+}
+
+@media (min-width:700px) and (max-width:1000px) {
+  body {
+    background-color: lightgray;
+  }
+}
+
+@media (min-width:300px) and (max-width:700px) {
+  body {
+    background-color: white;
+  }
+}
+
+@media only print {
+
+  /*O inverso de only print é only screen*/
+  h1 {
+    display: none;
+  }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro Profissional</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Formulário de Cadastro</h1>
+    <form action="pagina2.html" method="post" enctype="multipart/form-data">
+
+      <input type="hidden" name="country" value="BR">
+
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label for="name">
+          Primeiro nome:
+          <input type="text" name="name" id="name" required minlength="2">
+        </label>
+
+        <label for="lastname">
+          Sobrenome:
+          <input type="text" name="lastname" id="lastname">
+        </label>
+
+        <label for="foto">
+          Foto:
+          <input type="file" name="foto" accept="image/*">
+        </label>
+
+        <label for="birthdate">
+          Data de nascimento:
+          <input type="date" name="birthdate" id="birthdate" max="2020-01-01" required>
+        </label>
+
+        <label for="email">
+          E-mail:
+          <input type="email" name="email" id="email" title="endereço de email" required>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Dados Profissionais</legend>
+        <label for="company">
+          Nome da empresa:
+          <input type="text" name="company" id="company">
+        </label>
+
+        <label for="companyjobtitle">
+          Cargo:
+          <input type="text" name="companyjobtitle" id="companyjobtitle">
+        </label>
+      </fieldset>
+
+      <input type="submit" value="Cadastrar" class="submit-btn">
+
+    </form>
+  </div>
+</body>
+
+</html>

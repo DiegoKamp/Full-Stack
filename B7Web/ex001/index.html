@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="enpt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>Teste de tabela</h1>
+
+  <table>
+    <thead> <!-- Cabeçalho da tabela-->
+      <tr>
+        <th>Item 1</th>
+        <th>Item 2</th>
+        <th>Item 3</th>
+      </tr>
+    </thead>
+    <tbody> <!-- Corpo da tabela-->
+      <tr>
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+      </tr>
+      <tr>
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+      </tr>
+      <tr>
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+      </tr>
+    </tbody>
+
+  </table>
+
+  <h2>Tipos de input</h2>
+  <input type="text">
+  <!--Texto onde aparece o que o usuário está digitando--><!--Uma variação do text é password e email, que só aceita texto no formato de endereço de email-->
+  <input type="password"> <!--Texto onde não aparece o que o usuário está digitando-->
+  <input type="checkbox"> <!--Botão clicar-->
+  <input type="radio" name="sexo"> <!--Funciona em grupo, onde apenas uma opção é válida-->
+  <input type="radio" name="sexo">
+  <!--Só funciona com mais de um do mesmo tipo, mas com o mesmo name, se usar com nomes diferentes, ambos poderão ser clicados-->
+  <input type="submit"> <!--Botão de envio do formulário, será enviado para a página do "action" do form.-->
+  <input type="date">
+  <input type="datetime-local">
+  <input type="number">
+  <input type="range">
+
+  <select name="orde" id="">
+    <option disabled selected>Selecione</option>
+    <option value="bestseller">Mais vendidos</option>
+    <!--O primeiro fica pré-selecionado como padrão. Para mudar, usamos o atributo selected na opção escolhida. Uma boa opção é deixar um option vazio-->
+    <option value="last">Recentes</option>
+  </select>
+  <!--Quando não especifica o value, é enviado o texto como valor.-->
+
+  <label for="resposta">Resposta:</label><br>
+  <textarea name="descricao" id="resposta"></textarea>
+  <!--Ao colocar o mesmo id da label, ao clicar n texto da label, a área será destacada.-->
+
+  <br> <!--Pular linha-->
+
+  <input type="checkbox" id="declaracao">
+  <label for="declaracao">Pode clicar no texto para marcar o checkbox</label>
+
+  <!--
+  <label>
+    <input type="checkbox" name="declaracao">
+    Pode clicar no texto para marcar o checkbox
+  </label> 
+  -->
+  <!--Outra forma de fazer o comando anterior que não precisa colocar id no input-->
+
+  <br>
+
+  <label>
+    Nome completo
+    <input type="text" name="nome">
+  </label>
+  <!--Outra forma de usar a tag label-->
+
+
+  <!--É interessante colocar name e value em todos os inputs, exceto submit. Name irá identificar o tipo do input e value é uma "mensagem padrão" dentro do input.-->
+
+  <h2>Área de Cadastro</h2>
+  <form action="pagina/pagina.html" method="get"> <!--method= "get": vai jogar na URL, "post": vão internamente-->
+    <input type="text" name="Nome" value="Nome completo">
+  </form>
+
+  <h2> Área de Login</h2>
+  <form action="" method="post">
+
+  </form>
+</body>
+
+</html>

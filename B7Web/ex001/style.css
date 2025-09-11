@@ -1,0 +1,23 @@
+table {
+  width: 600px;
+  border: 1px solid black;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: left;
+}
+
+table thead {
+  background-color: gray;
+}
+
+table tbody {
+  background-color: lightgray;
+}
+
+tr:hover {
+  background-color: red;
+}

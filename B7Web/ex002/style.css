@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 50px;
+  font-size: 17px;
+}
+
+label {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+#nome,
+#descricao,
+#categoria {
+  width: 300px;
+  border: 1px solid #CCC;
+  outline: 0;
+  /*Tira o efeito do campo*/
+}
+
+#descricao {
+  height: 120px;
+  resize: none;
+  /*Desabilita a função de ajuste do usuário*/
+}
+
+.termos {
+  text-decoration: none;
+  color: black;
+}
+
+.termos:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.butao {
+  padding: 15px;
+  border: 1px solid #CCC;
+  background-color: #eee;
+}
+
+.butao:hover {
+  background-color: #999;
+}
