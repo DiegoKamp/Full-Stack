@@ -1,0 +1,177 @@
+/*
+.title {
+  color: blue;
+}
+
+h2.title {
+  color: green;
+}
+
+
+h2 {
+  color: red;
+}
+
+h2 {
+  color: rgb(54, 132, 168);
+}
+*/
+
+* {
+  /* Caso queira ver todas as margens para entender o conceito de caixas, inclua o comando
+  border: 1px solid red;*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* Considera que a caixa terá exatamente o valor determinado. Por padrão, o tamanho da caixa é calculado após os elementos estarem na caixa*/
+}
+
+body {
+  background-image: url(./assets/bg.jpg);
+  background-repeat: no-repeat;
+  /*Imagem não repete propriedade do tipo keyword*/
+  background-size: 100% auto;
+  /*Tamanho da imagem comparado ao tamanho da largura da página*/
+  background-position: top center;
+  /*Posição da Imagem Vertical (y) e Horizontal (x) */
+  background-color: #121214;
+  /*Cor de fundo igual a cor final da imagem código em HEX:0-F*/
+  color: white;
+}
+
+body * {
+  font-family: "Inter";
+  line-height: 160%;
+}
+
+header {
+  padding-top: 2rem;
+  /* Cada rem é, por padrão, 16px. Definir em px não adapta ao tamanho da tela/navegador.*/
+  text-align: center;
+}
+
+header img {
+  width: 15rem;
+}
+
+main {
+  max-width: 36rem;
+  margin: 3rem auto;
+  /*1 valor= todos os lados; 2 valores= 1º(cima e baixo) e 2º(laterais); 3 valores= 1º(cima) 2º(laterais) e 3º(baixo); 4 valores= sentido horário.*/
+  /*Colocar apenas auto não dá referência suficiente para as bordas superiores e inferiores */
+  width: 90%;
+}
+
+section {
+  background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50%, #E2D45D 100%);
+  border-radius: 0.625rem;
+  padding-top: 4px;
+}
+
+section>div {
+  padding: 2rem;
+  padding-top: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #2A2634;
+}
+
+section h2 {
+  letter-spacing: -0.47px;
+}
+
+section p {
+  letter-spacing: -0.18px;
+  color: #A1A1AA;
+}
+
+/* Animações*/
+main section {
+  opacity: 0;
+  transform: translateY(2rem);
+
+  animation-name: appear;
+  animation-duration: 700ms;
+  animation-fill-mode: forwards;
+  /*backwards é o inicio da animação e forwards é o final*/
+}
+
+@keyframes appear {
+  100% {
+    opacity: 1;
+    /* Valor 0 é nada, valor 1 é tudo*/
+    transform: translateY(0);
+    /*animação do botão, transladar em y*/
+  }
+}
+
+form {
+  display: flex;
+  /* Alinha os elementos "em linha"*/
+  gap: 0.85rem;
+  /*Espaço entre os componentes*/
+  flex-wrap: wrap;
+  /*Quebra de linha para os elementos*/
+  margin: 0.25rem 0;
+}
+
+input,
+select {
+  /*Poderia escrever apenas "form input, form select {}" para aumentar o peso das informações ou para especificar de qual input e select está sendo alterado. Cuidado! Ao dar mais peso numa regra mais acima do código, precisaremos de uma regra de peso igual ou superior abaixo para alterá-la.*/
+  all: unset;
+  /* Tira todas as configurações "padrão"*/
+  border: 2px solid #9147ff;
+  border-radius: 0.5rem;
+  padding: 0.675rem;
+  font-size: 0.875rem;
+  background-color: #00000066;
+  /*rgba a=alpha ou transparência (0=transparente, ff= opaco*/
+}
+
+input {
+  flex: 1;
+}
+
+button {
+  width: 100%;
+  border: 0;
+  background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50%, #E2D45D 100%);
+  padding: 0.675rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  /*CAIXA ALTA*/
+  letter-spacing: 0.2px;
+
+  transition: all 0.25s;
+  /*Tempo do transição do efeito aplicado*/
+}
+
+button:hover {
+  cursor: pointer;
+  /* Muda o tipo do cursor do mouse quando passa pela caixa*/
+  transform: translateY(-2px);
+  box-shadow: 0 5px 1rem rgba(255, 248, 107, 0.2);
+  /*Sombra do butão quando o cursor passar pela caixa*/
+  /*1º(sombra para a direita) 2º(sombra abaixo) 3º(espalhamento da sombra) 4º(cor (opcional))*/
+}
+
+button:disabled {
+  transition: initial;
+  transform: initial;
+  box-shadow: initial;
+  /* Poderia ser também:
+  transition: none;
+  transform: translate(0);
+  box-shadow: 0;*/
+  cursor: not-allowed;
+}
+
+.loading {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.5;
+  }
+}

@@ -20,15 +20,15 @@ user = "DKamp"
 /*let*/
 
 
-let name = "Diego";
+let useremail = "diego@email.com";
 
-console.log(name);
+console.log(useremail);
 
-// let name = "Kamp"; Não deixa criar/declarar a mesma variável quando usamos let, mas deixa reutilizá-la/redefini-la/alterá-la
+// let useremail = "Kamp"; Não deixa criar/declarar a mesma variável quando usamos let, mas deixa reutilizá-la/redefini-la/alterá-la
 
-name = "Kamp"
+useremail = "kamp@email.com"
 
-console.log(name);
+console.log(useremail);
 
 
 
@@ -62,8 +62,21 @@ console.log(numberTest);
 //Embora existem três tipos de variáveis, é preferível usar apenas duas: let e const, já que o var é de escopo global e acaba dando erro em algumas situações.
 
 
+/*Template Literal*/
+
+console.log("Método 1:");
+
+let message1 = "Olá, " + user + ". Você conectou com o email: " + useremail;
+
+console.log(message1);
+
+//Método mais retrógrado/ultrapassado, mais difícil de escrever e ler
 
 
+console.log("Método 2:");
 
+let message2 = `Olá, ${user}. Você conectou com o email: ${useremail}`;
 
+console.log(message2);
 
+//Método mais usual, mais fluida
