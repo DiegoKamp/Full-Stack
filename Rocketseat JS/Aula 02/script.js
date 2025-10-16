@@ -79,12 +79,12 @@ console.log(number);
 
 // Outra forma
 
-number = number +15;
+number = number + 15;
 
 console.log(number);
 
 
-number = number -20;
+number = number - 20;
 
 console.log(number);
 
@@ -160,10 +160,10 @@ console.log(Daniel);
 
 age = 10;
 
-if(age>= LegalAge){
+if (age >= LegalAge) {
   console.log("Pode tirar CNH")
 }
-else{
+else {
   console.log("Não pode")
 }
 
@@ -171,10 +171,10 @@ else{
 const Diego = 40;
 
 
-if(Diego>=LegalAge){
+if (Diego >= LegalAge) {
   console.log("Pode tirar CNH")
 }
-else{
+else {
   console.log("Não pode")
 }
 
