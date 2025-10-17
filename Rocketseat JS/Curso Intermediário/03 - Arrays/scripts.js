@@ -50,9 +50,10 @@ nameList.push("Shirley")
 console.log(nameList);
 
 nameList.unshift("Abacate");
+// Adiciona no início
+
 nameList.push("Morango")
 
-// Adiciona no início
 
 console.log(nameList);
 
@@ -95,6 +96,44 @@ fruits.splice(deleteFruitPosition, 1); // Tira na posição que foi encontrado o
 
 console.log(fruits);
 
+fruits.splice(1, 0, "Banana");
+
+console.log(fruits);
+
+fruits.splice(fruits.indexOf("Banana"), 1);
+// Retira o item diretamente 
+/*CUIDADO!: Se o nome estiver digitado errado (case sensitive), será retirado o último da lista */
+
+
+fruits.splice(1, 0, "Strawberry");
+
+fruits.splice(0, 0, "Banana");
+
+
+console.log(fruits);
+
+
+// Tentar retirar um item específico com uma sem o risco de tirar o último
+
+
+let deleteFruit = "Banana"
+
+if (fruits.indexOf(deleteFruit) === -1) {
+  console.log("Item não encontrado")
+} else {
+  fruits.splice(fruits.indexOf(deleteFruit), 1);
+}
+
+console.log(fruits);
+
+
+
+// Tentar retirar um item específico sem case sensitive
+
+
+
+
+
 
 
 // Um array pode conter qualquer tipo de informação
@@ -111,12 +150,23 @@ const myArray = [
     console.log("Uma função dentro do array")
   },
 
+  /*Objeto = {
+    name: "Diego",
+    email: "diegokamp@gmail.com"
+  }
+*/
+
+]
+
+
+myArray.push(
   Objeto = {
     name: "Diego",
     email: "diegokamp@gmail.com"
   }
+)
+//Acrescentei um Objeto inteiro dentro do Array
 
-]
 
 console.log(myArray.length);
 
