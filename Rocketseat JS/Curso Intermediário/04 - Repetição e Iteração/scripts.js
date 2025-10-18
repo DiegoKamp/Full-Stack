@@ -133,14 +133,21 @@ for (let child of children) {
 // Cuidado! Um objeto não é iterável
 
 
-/*let user = {
-    name: "Diego",
-    surname: "Quelhas",
-    email: "diegokamp@gmail.com",
-  }
+let user = {
+  name: "Diego",
+  surname: "Quelhas",
+  email: "diegokamp@gmail.com",
+}
+// Esse objeto não é iterável
+
+/*
+for (let userPropriety of user) {
+  console.log(userPropriety[surname])
+}
+Esse comando dará erro!
 */
 
-let user = [ // Apenas transformei um objeto num array
+let userArray = [ // Apenas transformei um objeto num array
   {
     name: "Diego",
     surname: "Quelhas",
@@ -148,13 +155,7 @@ let user = [ // Apenas transformei um objeto num array
   },
 ]
 
-/*
-for (let userPropriety of user) {
-  console.log(userPropriety[surname])
-}
-*/
-
-for (let userPropriety of user) {
+for (let userPropriety of userArray) {
   console.log(userPropriety.surname)
 }
 
