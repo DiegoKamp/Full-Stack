@@ -26,15 +26,15 @@ console.log("Diferente de: ", one != two);
 console.log("Diferente de: ", one != 1);
 console.log("Diferente de: ", one != "1");
 
-// Extritamente igual a (tipo e valor)
-console.log("Extritamente igual a: ", one === two);
-console.log("Extritamente igual a: ", one === 1);
-console.log("Extritamente igual a: ", one === "1");
+// Estritamente igual a (tipo e valor)
+console.log("Estritamente igual a: ", one === two);
+console.log("Estritamente igual a: ", one === 1);
+console.log("Estritamente igual a: ", one === "1");
 
-// Extritamente diferente de
-console.log("Extritamente diferente de: ", one !== two);
-console.log("Extritamente diferente de: ", one !== 1);
-console.log("Extritamente diferente de: ", one !== "1");
+// Estritamente diferente de
+console.log("Estritamente diferente de: ", one !== two);
+console.log("Estritamente diferente de: ", one !== 1);
+console.log("Estritamente diferente de: ", one !== "1");
 
 // Maior, menor, maior ou igual, menor ou igual
 let Cinco = 5;

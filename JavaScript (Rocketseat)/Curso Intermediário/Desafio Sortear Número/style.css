@@ -1,0 +1,64 @@
+:root {
+  /* === Content === */
+  --content-primary: #ffffff;
+  --content-secondary: #C7c9cc;
+  --content-tertiary: #D9d9d9;
+  --content-brand: #c58de7;
+  --color-inverse: #030203;
+
+  /* === Background === */
+  --background-primary: #020202;
+  --background-secondary: #111012;
+  --background-tertiary: #24222e;
+  --background-brand: #c58de7;
+  --background-gray: #3d3d3d;
+
+  /* === Accent === */
+  --accent-pink: #d586e0;
+  --accent-blue: #91a1fa;
+  --accent-green: #77c0aa;
+  --accent-lime: #d1dc97;
+  --accent-red: #e9a9b3;
+
+  /* === Gradient === */
+  --gradient-border: linear-gradient(to right, #77c0af 0%, #d1dc97 14.84%, #e9a9b3 32.15%, #d586e0 65.79% #91a1Fa 84.58%);
+  --gradient-background: linear-gradient(to right, #d586e0 0%, #91a1fa 98.93%);
+  --gradient-content: linear-gradient(to right, #c7c9cc 0%, #3d3d3d 100%);
+
+
+  background-image: linear-gradient(to right, #77c0af 0%, #d1dc97 14.84%, #e9a9b3 32.15%, #d586e0 65.79% #91a1Fa 84.58%);
+
+
+  /*
+
+// <weight>: Use a value from 100 to 800
+// <uniquifier>: Use a unique and descriptive class name
+.sora-<uniquifier> {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+// <weight>: Use a value from 100 to 700
+// <uniquifier>: Use a unique and descriptive class name
+.roboto-mono-<uniquifier> {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+*/
+
+}
+
+
+h1 {
+  color: var(--content-primary);
+
+}
+
+h2 {
+  color: var(--content-secondary);
+}
