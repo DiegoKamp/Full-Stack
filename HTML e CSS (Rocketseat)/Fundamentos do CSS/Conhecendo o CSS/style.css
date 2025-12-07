@@ -1,0 +1,62 @@
+/*Especificidade
+#id = 100,
+.class = 10,
+element = 1,
+
+Caso o "peso" seja igual, o último declarado será aplicado
+*/
+p {
+  color: blue;
+}
+
+p.paragraph#first {
+  color: aqua;
+}
+
+#first {
+  color: red;
+  /*Não funcionou porque tem um mais específico*/
+}
+
+.paragraph {
+  color: green;
+}
+
+* {
+  color: lime;
+}
+
+[title] {
+  color: aquamarine;
+}
+
+/*Mesmo invertendo as ordens, ficará vermelho porque está com peso de id*/
+
+/*Para aplicar mais de um seletor, devemos colocar SEM ESPAÇOS*/
+
+/*Style in line é mais específico que os pesos. Mais pesado que o Style é o !important*/
+
+a {
+  color: blue;
+}
+
+/* Links internos, começando com "#" */
+a[href^="#"] {
+  background-color: gold;
+}
+
+/* Links com "example" em qualquer lugar da URL */
+a[href*="example"] {
+  background-color: silver;
+}
+
+/* Links com "insensitive" em qualquer lugar da URL,
+   independentemente da capitalização */
+a[href*="insensitive" i] {
+  color: cyan;
+}
+
+/* Links com final ".org" */
+a[href$=".org"] {
+  color: red;
+}
