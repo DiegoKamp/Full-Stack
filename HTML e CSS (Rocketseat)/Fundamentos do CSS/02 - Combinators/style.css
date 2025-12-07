@@ -1,0 +1,30 @@
+p {
+  color: green;
+}
+
+/*Aplicado a todos os parágrafos*/
+
+article p {
+  color: red;
+}
+
+/*Descendent: Aplicado a todos os parágrafos dentro do article. Peso (0,0,2)*/
+
+span,
+mark {
+  color: aqua;
+}
+
+/*Duas TAGs receberão, individualmente as propriedades*/
+
+h2+p {
+  color: black;
+}
+
+/*Propriedade de uma tag p que veio depois de uma tag h2.*/
+
+aside>ul {
+  margin-top: 40px;
+}
+
+/*Aplica a margem no primeiro filho ul do pai aside*/
