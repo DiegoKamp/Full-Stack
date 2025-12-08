@@ -1,0 +1,67 @@
+div {
+  border: solid;
+}
+
+.square {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+}
+
+.other {
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+span {
+  border: solid blue;
+  /*
+  width: 200px;
+  height: 200px;
+Não são aplicáveis a elementos in line
+  */
+}
+
+.border {
+  /*border: solid red 4px;*/
+  border-style: dashed solid dotted groove;
+  border-width: 6px;
+  border-color: lime;
+  /*Caso coloque uma propriedade diferente de style, não irá considerar o comando*/
+  /* Acho que fica melhor trabalhar com as propriedades individuais quando precisar trabalhar cada estilo/cor/largura num lado. Se todos os lados forem iguais, prefiro apenas usar a propriedade border:*/
+}
+
+.margin {
+  border: solid red;
+  margin: 20px;
+  /*O block recebe em todos os lados, mas o inline recebe apenas na horizontal*/
+  /*margin: 20px 35px 10px 5px;*/
+}
+
+.random {
+  border: solid green;
+  width: 50%;
+  /*A largura é de 50% do espaço disponível. Não aplicável a um elemento inline*/
+  margin: auto;
+}
+
+.colapso {
+  border: solid yellow;
+  margin: 30px;
+  /*Entre as duas divs o espaço será de 30px (não 60px) porque o margin é o espaço até o outro objeto "sólido"*/
+}
+
+.padding {
+  width: 200px;
+  height: 100px;
+  border: solid;
+  padding: 20px;
+  /*Não usar em elementos inline para não sobrepor*/
+  /*O padding altera (aumenta) o tamanho da caixa, para isso não acontecer, usamos a propriedade
+  
+  box-sizing: border-box;
+  */
+
+
+}

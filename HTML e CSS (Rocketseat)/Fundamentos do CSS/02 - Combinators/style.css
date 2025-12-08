@@ -18,7 +18,7 @@ mark {
 /*Duas TAGs receberão, individualmente as propriedades*/
 
 h2+p {
-  color: black;
+  color: rgba(0, 0, 0, 0.907);
 }
 
 /*Propriedade de uma tag p que veio depois de uma tag h2.*/
