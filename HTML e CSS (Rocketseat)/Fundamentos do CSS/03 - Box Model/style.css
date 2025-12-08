@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double+Ink:wght@100..900&display=swap');
+
 div {
   border: solid;
 }
@@ -59,9 +61,65 @@ Não são aplicáveis a elementos in line
   padding: 20px;
   /*Não usar em elementos inline para não sobrepor*/
   /*O padding altera (aumenta) o tamanho da caixa, para isso não acontecer, usamos a propriedade
-  
-  box-sizing: border-box;
+   box-sizing: border-box;
   */
+}
+
+#li01 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#li02 {
+  font-size: 1.5rem;
+}
+
+#li03 {
+  font-style: italic;
+}
+
+#li04 {
+  font-weight: bold;
+}
+
+#li05 {
+  color: red;
+}
+
+#li06 {
+  text-transform: uppercase;
+}
+
+#li07 {
+  text-decoration: line-through underline;
+}
+
+#li08 {
+  text-align: center;
+}
+
+#li09 {
+  line-height: 2rem;
+}
+
+#li10 {
+  letter-spacing: 0.5em;
+}
+
+#li11 {
+  word-spacing: 2rem;
+}
+
+#li12 {
+  font-family: "Bitcount Prop Single", system-ui;
+}
+
+/*As conexões devem ficar no topo do CSS, mas vai ficar comentado aqui por questões didáticas
+
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double+Ink:wght@100..900&display=swap');
+
+Importar pelo CSS é mais lento que pelo HTML.*/
 
 
+#li13 {
+  font-family: "Bitcount Prop Double Ink", system-ui;
 }
