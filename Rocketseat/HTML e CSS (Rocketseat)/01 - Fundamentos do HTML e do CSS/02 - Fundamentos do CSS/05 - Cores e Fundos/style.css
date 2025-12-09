@@ -1,0 +1,29 @@
+#color-named {
+  color: red;
+}
+
+#color-hex {
+  color: #17e440
+}
+
+div {
+  width: 200px;
+  height: 200px;
+}
+
+#div01 {
+  background-color: rgb(60, 241, 244);
+  text-align: center;
+}
+
+#div02 {
+  border: solid;
+  width: 300px;
+  height: 300px;
+  background-image: url(https://images.pexels.com/photos/414628/pexels-photo-414628.jpeg);
+  background-size: 95%;
+  background-repeat: no-repeat;
+  background-position: center;
+  /*  background-position-x: ;
+  background-position-y: ;*/
+}
