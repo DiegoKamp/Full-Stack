@@ -4,8 +4,6 @@
   /*border: solid 0.5px green;*/
 }
 
-
-
 html,
 body {
   height: 100%;
@@ -15,11 +13,17 @@ body {
 
 body {
   background-color: black;
-  margin: 0;
-  min-height: 100vh;
+  min-height: 100%;
   font-family: "Open Sans", sans-serif;
 }
 
+.page {
+  background-color: #F5F4F0;
+  max-width: 1120px;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 88px 80px 48px;
+}
 
 .image {
   width: 100%;
@@ -34,23 +38,18 @@ body {
 }
 
 
-#page {
-  background-color: #F5F4F0;
-  max-width: 1120px;
-  min-height: 100%;
-  margin: 0 auto;
-  padding: 88px 80px 48px;
-}
 
 
 #content {
   background-color: #F5F4F0;
   max-width: 1120px;
   box-sizing: border-box;
-  border: solid green;
   margin: 0 auto;
 }
 
+.line {
+  border-top: solid 1px #d9d9d9;
+}
 
 h1 {
   margin-top: 8px;
@@ -97,4 +96,22 @@ ul {
   list-style-position: inside;
   display: flex;
   align-items: center;
+}
+
+
+.first-section {
+  margin-top: 64px;
+}
+
+.discover {
+  border-top: 2px;
+}
+
+.paragraph {
+  border-top: 8px;
+}
+
+.places {
+  border-top: 64px;
+  color: red;
 }
