@@ -37,10 +37,7 @@ body {
   height: 660px;
 }
 
-
-
-
-#content {
+.content {
   background-color: #F5F4F0;
   max-width: 1120px;
   box-sizing: border-box;
@@ -49,6 +46,10 @@ body {
 
 .line {
   border-top: solid 1px #d9d9d9;
+}
+
+#last-line {
+  margin: 40px 0 40px 0;
 }
 
 h1 {
@@ -62,10 +63,9 @@ h2 {
   font-weight: bold;
 }
 
-h3 {
+ol li {
   font-size: 28px;
   font-weight: bold;
-
 }
 
 .headline {
@@ -94,24 +94,62 @@ p {
 ol,
 ul {
   list-style-position: inside;
-  display: flex;
-  align-items: center;
 }
 
+ol {
+  margin-top: 20px;
+}
+
+li {
+  margin-left: 8px;
+}
 
 .first-section {
   margin-top: 64px;
+  margin-bottom: 64px;
 }
 
 .discover {
-  border-top: 2px;
+  margin-top: 2px;
 }
 
 .paragraph {
-  border-top: 8px;
+  margin-top: 8px;
 }
 
 .places {
-  border-top: 64px;
-  color: red;
+  margin-top: 48px;
+}
+
+.História {
+  font-weight: bold;
+  color: #0C51A7;
+}
+
+.Casais {
+  font-weight: bold;
+  color: #591B98;
+}
+
+.Famílias {
+  font-weight: bold;
+  color: #E5245E;
+}
+
+.Orçamento {
+  font-weight: bold;
+  color: #E95E10;
+}
+
+.conclusion {
+  text-align: center;
+}
+
+footer {
+  margin-top: 65px;
+  text-align: center;
+}
+
+footer img {
+  vertical-align: middle;
 }
