@@ -1,8 +1,17 @@
 * {
   margin: 0;
   padding: 0;
-  /*border: solid 0.5px green;*/
+  box-sizing: border-box;
 }
+
+
+
+/*
+Onde vai essa cor de texto????
+.text-tertiary{
+  color: #696969;
+}
+*/
 
 html,
 body {
@@ -27,20 +36,20 @@ body {
 
 .image {
   width: 100%;
-  height: 350px;
+  height: auto;
+  max-height: 350px;
   border-radius: 28px;
   object-fit: cover;
 }
 
 
 #first-image {
-  height: 660px;
+  height: auto;
+  max-height: 660px;
 }
 
 .content {
-  background-color: #F5F4F0;
   max-width: 1120px;
-  box-sizing: border-box;
   margin: 0 auto;
 }
 
@@ -68,6 +77,12 @@ ol li {
   font-weight: bold;
 }
 
+h1,
+h2,
+ol li {
+  color: #1B1B1B;
+}
+
 .headline {
   text-transform: uppercase;
   font-size: 16px;
@@ -78,6 +93,7 @@ ol li {
 p {
   font-size: 16px;
   font-weight: normal;
+  color: #333333;
 }
 
 .subtitle {
@@ -121,22 +137,22 @@ li {
   margin-top: 48px;
 }
 
-.História {
+.historia {
   font-weight: bold;
   color: #0C51A7;
 }
 
-.Casais {
+.casais {
   font-weight: bold;
   color: #591B98;
 }
 
-.Famílias {
+.familias {
   font-weight: bold;
   color: #E5245E;
 }
 
-.Orçamento {
+.orcamento {
   font-weight: bold;
   color: #E95E10;
 }
