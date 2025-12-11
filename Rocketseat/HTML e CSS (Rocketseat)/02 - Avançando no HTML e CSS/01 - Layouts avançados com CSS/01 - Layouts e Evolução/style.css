@@ -1,0 +1,58 @@
+:root {
+  /*Só pra lembrar que isso existe*/
+  --bg-color: #000;
+}
+
+
+div {
+  width: 40px;
+  height: 40px;
+  border: solid 1px;
+  text-align: center;
+  margin: 4px;
+  line-height: 250%;
+  /*Por quê?*/
+}
+
+
+div:not(.negative) {
+  background-color: red;
+}
+
+/*Aplica a todos os elementos que NÃO tiverem a classe "negative" */
+
+section:has(div:hover) {
+  background-color: yellow;
+}
+
+div:nth-child(7) {
+  color: green;
+  /*Pegou a div 4???*/
+  /*Sétimo filho que possui a tag div como filho e que é uma div*/
+}
+
+div:nth-child(2) {
+  color: purple;
+  /*Não funciona porque o segundo filho não é uma div!*/
+}
+
+
+div:nth-of-type(2) {
+  color: yellow;
+  /*Aqui usa o segundo filho da tag div. Achei o uso mais direto/objetivo*/
+}
+
+
+div:hover {
+  background-color: aqua;
+}
+
+/*A ordem importa!*/
+
+
+/*Pseudo-elements*/
+
+h2::first-letter {
+  color: violet;
+  font-size: 38px;
+}
