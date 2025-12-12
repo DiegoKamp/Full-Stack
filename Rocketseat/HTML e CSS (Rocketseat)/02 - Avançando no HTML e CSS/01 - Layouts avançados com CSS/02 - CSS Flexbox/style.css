@@ -1,0 +1,92 @@
+/*Flexbox*/
+
+/*
+Concepts:
+ - Todo flex box terá um container e os itens dentro dele
+ - Existe o eixo principal (main) e cruzado (cross), sempre tendo início e fim.
+   - Embora possa ser mudado pelas propriedades, o normal flow é main ser horizontal (da direita para a esquerda) e o cross ser na vertical (de cima para baixo)
+ - O tamanho dos itens será alterado de acordo com o espaço (e direção) fornecido.
+
+Direction (flex-direction):
+ - Inversão de eixo e/ou de direção (row, row-reverse, column, column-reverse)
+
+Alignment and Spaces:
+ - Justify-content
+   - 
+ - Align-item
+ - Gap
+ - Margin
+
+
+
+
+*/
+
+
+
+
+.container-a {
+  display: flex;
+  border: 2px dashed;
+
+  /*flex-direction define onde inicia e onde termina (direção e sentido)*/
+  /*flex-direction: row;*/
+  flex-direction: row-reverse;
+  /*flex-direction: column;
+  flex-direction: column-reverse;*/
+
+  /*
+  flex-end e flex-start indica se os conteúdos iniciarão no inicio ou no final da flexbox
+  */
+
+  /*
+  Neste caso, a direção está em linha, mas na ordem reversa dos elementos. Além de começar no espaço onde seria o fim.
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  */
+
+  justify-content: space-evenly;
+
+}
+
+.container-a .item {
+  --hue: 0;
+  width: 40px;
+  text-align: center;
+  background-color: hsl(var(--hue), 100%, 70%);
+}
+
+
+.container-b {
+  height: 25vh;
+  /*View Height, porcentagem da altura da tela que será ocupada pelo item*/
+  margin-top: 40px;
+  display: flex;
+  border: 2px dashed;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container-b .item {
+  --hue: 0;
+  height: 40px;
+  text-align: center;
+  background-color: hsl(var(--hue), 100%, 70%);
+}
+
+
+.container-c {
+  margin-top: 40px;
+  height: 25vh;
+  border: 2px dashed;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.container-c .item {
+  --hue: 0;
+  width: 30px;
+  text-align: center;
+  background-color: hsl(var(--hue), 100%, 70%);
+}
