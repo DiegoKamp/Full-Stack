@@ -1,0 +1,6 @@
+.container-a {
+  display: flex;
+  border: 2px dashed;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+}

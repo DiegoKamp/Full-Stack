@@ -95,6 +95,8 @@ console.log("Ordem de Precedência")
 
 /*Ordem de Precedência*/
 
+//https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Operator_precedence
+
 console.log("Exponenciação, Multiplicação, Adição, Relacional, not, and, or")
 
 //Exponenciação (Mais alto) (**)

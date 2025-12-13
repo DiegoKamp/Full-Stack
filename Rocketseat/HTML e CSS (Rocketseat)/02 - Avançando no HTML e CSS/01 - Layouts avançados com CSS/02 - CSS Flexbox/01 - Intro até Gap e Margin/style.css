@@ -102,7 +102,9 @@ Alignment and Spaces:
   height: 25vh;
   border: 2px dashed;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  gap: 10%;
+  /*Espaço entre os elementos, sendo em medidas absolutas ou relativas*/
 }
 
 .container-d .item {
@@ -110,4 +112,27 @@ Alignment and Spaces:
   width: 30px;
   text-align: center;
   background-color: hsl(var(--hue), 100%, 70%);
+}
+
+.container-e {
+  margin-top: 40px;
+  height: 10vh;
+  border: 2px dashed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.container-e .item {
+  --hue: 0;
+  width: 30px;
+  text-align: center;
+  background-color: hsl(var(--hue), 100%, 70%);
+}
+
+#item1 {
+  --hue: 0;
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
+  margin-top: auto;
 }
