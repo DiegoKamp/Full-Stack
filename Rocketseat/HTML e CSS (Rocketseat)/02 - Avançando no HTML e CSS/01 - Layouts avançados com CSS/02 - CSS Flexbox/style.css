@@ -23,8 +23,6 @@ Alignment and Spaces:
 */
 
 
-
-
 .container-a {
   display: flex;
   border: 2px dashed;
@@ -46,7 +44,6 @@ Alignment and Spaces:
   */
 
   justify-content: space-evenly;
-
 }
 
 .container-a .item {
@@ -82,9 +79,33 @@ Alignment and Spaces:
   display: flex;
   flex-direction: row;
 
+  /*align-items alinha os itens no 'eixo cruzado'*/
+  align-items: stretch;
+  /*Estica*/
+  align-items: flex-start;
+  align-items: flex-end;
+  align-items: center;
+  align-items: baseline;
+  /*Alinha os itens pela base do texto*/
 }
 
 .container-c .item {
+  --hue: 0;
+  width: 30px;
+  text-align: center;
+  background-color: hsl(var(--hue), 100%, 70%);
+}
+
+
+.container-d {
+  margin-top: 40px;
+  height: 25vh;
+  border: 2px dashed;
+  display: flex;
+  flex-direction: row;
+}
+
+.container-d .item {
   --hue: 0;
   width: 30px;
   text-align: center;
