@@ -12,13 +12,14 @@
 
 .container-a {
   display: flex;
-  height: 40vh;
+  height: 25vh;
   border: 2px dashed;
   flex-direction: row;
   justify-content: space-evenly;
   /*flex-wrap: nowrap; Não terá "quebra de div", ajustando os tamanhos dos itens internos para caber no espaço*/
   flex-wrap: wrap;
-  /*É criado uma nova "div container", tendo linhas principal e transversal, como em align-items*/
+  /*É criado uma nova "div container", tendo linhas principal e transversal, quando aplicado align-items e não o align-content*/
+  /*O align-content serve para "retornar" as propriedades de apenas uma div. E só funciona quando aplicamos o flex-wrap.*/
   align-items: center;
   align-content: flex-start;
   /*Alinha todos os conteúdos no top*/
@@ -37,4 +38,23 @@
   background-color: hsl(var(--hue), 100%, 70%);
   width: 150px;
   text-align: center;
+}
+
+
+.container-b {
+  margin-top: 40px;
+  display: flex;
+  height: 20vh;
+  border: 2px dashed;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.container-b .item {
+  background-color: hsl(var(--hue), 100%, 70%);
+  text-align: center;
+  align-content: center;
+  /*width: 150px;*/
+  flex-basis: 60px;
+  /*Substitui a largura. Mas CUIDADO, o flex-basis é aplicado ao EIXO PRINCIPAL. Como neste caso, o flex-direction está em row, o valor do flex-basis é aplicado à linha.*/
 }
