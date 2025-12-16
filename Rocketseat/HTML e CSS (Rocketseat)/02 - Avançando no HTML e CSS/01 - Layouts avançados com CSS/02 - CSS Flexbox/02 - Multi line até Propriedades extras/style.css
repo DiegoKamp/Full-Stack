@@ -1,6 +1,40 @@
+/*Multi line*/
+/*
+ - Flex-wrap
+   - tamanho do container
+   - nova linha = novo container
+   - valores
+ - align-content
+
+*/
+
+
+
 .container-a {
   display: flex;
+  height: 40vh;
   border: 2px dashed;
-  flex-direction: row-reverse;
+  flex-direction: row;
   justify-content: space-evenly;
+  /*flex-wrap: nowrap; Não terá "quebra de div", ajustando os tamanhos dos itens internos para caber no espaço*/
+  flex-wrap: wrap;
+  /*É criado uma nova "div container", tendo linhas principal e transversal, como em align-items*/
+  align-items: center;
+  align-content: flex-start;
+  /*Alinha todos os conteúdos no top*/
+  align-content: flex-end;
+  /*Alinha todos os conteúdos no bottom*/
+  align-content: center;
+  align-content: space-around;
+  /*Gostei desse. Coloca espaço, sobrando um pouco como se fosse padding*/
+  align-content: space-between;
+  /*Interessante. Isola as linhas com o máximo de distância*/
+  align-content: space-evenly;
+
+}
+
+.container-a .item {
+  background-color: hsl(var(--hue), 100%, 70%);
+  width: 150px;
+  text-align: center;
 }
