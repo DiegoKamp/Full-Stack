@@ -58,3 +58,100 @@
   flex-basis: 60px;
   /*Substitui a largura. Mas CUIDADO, o flex-basis é aplicado ao EIXO PRINCIPAL. Como neste caso, o flex-direction está em row, o valor do flex-basis é aplicado à linha.*/
 }
+
+
+.container-c {
+  margin-top: 40px;
+  display: flex;
+  height: 20vh;
+  border: 2px dashed;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.container-c .item {
+  background-color: hsl(var(--hue), 100%, 70%);
+  text-align: center;
+  align-content: center;
+  /*width: 150px;*/
+  flex-grow: 1;
+}
+
+.container-c .item:nth-child(6) {
+  flex-grow: 2;
+  /*O item terá um crescimento de 2 vezes o valor da base*/
+}
+
+
+.container-d {
+  margin-top: 40px;
+  display: flex;
+  height: 20vh;
+  border: 2px dashed;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.container-d .item {
+  background-color: hsl(var(--hue), 100%, 70%);
+  text-align: center;
+  align-content: center;
+  width: 100px;
+  flex-shrink: 0;
+  /*Desativa o encolhimento automático. Se o conteúdo tiver que "transbordar" da div, irá fazê-lo.*/
+  /*Por padrão, o valor do flex-shrink é 1*/
+}
+
+
+.container-e {
+  margin-top: 40px;
+  display: flex;
+  height: 20vh;
+  border: 2px dashed;
+  flex-direction: row;
+}
+
+.container-e .item {
+  background-color: hsl(var(--hue), 100%, 70%);
+  text-align: center;
+  align-content: center;
+  width: 100px;
+  flex-shrink: 0;
+  /*Desativa o encolhimento automático. Se o conteúdo tiver que "transbordar" da div, irá fazê-lo.*/
+  /*Por padrão, o valor do flex-shrink é 1 (para todos os conteúdos)*/
+}
+
+.container-e .item:nth-child(2) {
+  flex-shrink: 3;
+  /*Está encolhendo numa proporção de 3 vezes mais que o padrão*/
+}
+
+.container-e .item:nth-child(3) {
+  flex-shrink: 2;
+  /*Está encolhendo numa proporção de 3 vezes mais que o padrão*/
+}
+
+/*Importante: A proporção de encolhimento será aplicada caso haja espaço, se não houver espaço, os itens permitidos a encolher, encolherão ao máximo, mesmo com taxas de encolhimento diferentes*/
+
+
+
+.container-f {
+  margin-top: 40px;
+  display: flex;
+  height: 30vh;
+  border: 2px dashed;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-evenly;
+}
+
+.container-f .item {
+  background-color: hsl(var(--hue), 100%, 70%);
+  text-align: center;
+  align-content: center;
+  flex-basis: 20px;
+  /*width: 100px;
+  O align-items: stretch; não funciona porque o .container-f .item tem peso maior e está aplicando uma largura fixa. Por isso, é mais indicado usar o flex-basis:, que será aplicado no eixo secundário (row) da div.*/
+  /*flex-grow: 1;
+  Preenche o item no eixo principal (column), fazendo com que o justify-content: space-evenly; seja inútil*/
+}
