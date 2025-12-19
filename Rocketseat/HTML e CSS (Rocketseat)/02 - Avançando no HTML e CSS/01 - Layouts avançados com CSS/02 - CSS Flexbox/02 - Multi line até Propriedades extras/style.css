@@ -155,3 +155,105 @@
   /*flex-grow: 1;
   Preenche o item no eixo principal (column), fazendo com que o justify-content: space-evenly; seja inútil*/
 }
+
+
+.container-g {
+  margin-top: 40px;
+  display: flex;
+  height: 10vh;
+  border: 2px dashed;
+  flex-direction: row;
+}
+
+.container-g .item {
+  background-color: hsl(var(--hue), 100%, 70%);
+  text-align: center;
+  align-content: center;
+  flex: initial;
+  /*0 1 auto (Grow,Shrink,Basis)*/
+  flex: auto;
+  /*1 1 auto (Grow,Shrink,Basis) Melhor até agora!*/
+  flex: none;
+  /*0 0 auto (Grow,Shrink,Basis)*/
+  flex: 1;
+  /* <Grow> 1 0 (Grow,Shrink,Basis) */
+
+  flex: 50px;
+  /* 1 1 <Basis> (Grow,Shrink,Basis) */
+
+
+  flex: 0 1;
+  /* <Grow> <Shrink> 0 (Grow,Shrink,Basis)*/
+
+  flex: 0 10%;
+  /* <Grow> 1 <Basis> (Grow,Shrink,Basis)*/
+
+  flex: 0 1 80px;
+  /* <Grow> <Shrink> <Basis> (Grow,Shrink,Basis)*/
+}
+
+
+.container-h {
+  margin-top: 40px;
+  display: flex;
+  height: 10vh;
+  border: 2px dashed;
+  flex-direction: row;
+}
+
+.container-h .item {
+  background-color: hsl(var(--hue), 100%, 70%);
+  text-align: center;
+  align-content: center;
+  flex: auto;
+}
+
+.container-h .item:nth-child(4) {
+  order: -1;
+  /*Todos os elementos têm valor igual a 0, ou seja, valor menor colocará antes, ao passo que, um valor maior colocará depois.*/
+  /*Muda apenas a ordem visual, não os elementos do HTML, ou seja, não é usado por conta da acessibilidade.*/
+}
+
+/*Flexbox*/
+
+/*
+***Container:***
+Display
+Flex-flow (Identifica automaticamente)
+  - Flex-direction
+  - Flex-wrap
+Gap (Um valor só, aplica às duas propriedades)
+  - Row-gap
+  - Column-gap
+Justify-content
+align-itens
+align-content
+
+
+***Children:***
+Flex
+Flex-grow
+Flex-Shrink
+Flex-basis
+Align-self
+*/
+
+
+.container-i {
+  margin-top: 40px;
+  display: flex;
+  height: 10vh;
+  border: 2px dashed;
+  flex-direction: row;
+}
+
+.container-i .item {
+  background-color: hsl(var(--hue), 100%, 70%);
+  text-align: center;
+  align-content: center;
+  flex: auto;
+}
+
+.container-i .item:nth-child(4) {
+  align-self: center;
+}
