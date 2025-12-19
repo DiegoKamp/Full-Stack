@@ -13,7 +13,17 @@
   --shape-transparency: #ffffff8f;
   --text-color-primary: #313131;
   --text-color-secondary: #6C6C6C;
+
+  /*font: font-style font-variant font-weight font-size/line-height font-family;*/
+  --font-family: "Poppins", sans-serif;
+  --text-lg: bold 32px/125% var(--font-family);
+  /*Posso usar uma variável que "puxa" outra*/
+  /*--text-lg: bold 32px/125% "Poppins", sans-serif;*/
+  --text-md: 14px/170% var(--font-family);
+  --text-sm: 12px/170% var(--font-family);
+  --text-normal: 16px/150% var(--font-family);
 }
+
 
 body {
   background-color: var(--background-color)
@@ -21,4 +31,5 @@ body {
 
 p {
   color: var(--text-color-secondary);
+  font: var(--text-md);
 }
