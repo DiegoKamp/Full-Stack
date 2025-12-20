@@ -2,3 +2,15 @@
   width: 592px;
   height: 176px;
 }
+
+.header {
+  display: flex;
+}
+
+#profileDescription {
+  display: flex;
+}
+
+div ul {
+  list-style: none;
+}
