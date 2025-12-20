@@ -23,13 +23,12 @@ nav ul {
   height: 40px;
 }
 
-
 a:hover {
   color: var(--brand-color);
   text-decoration: underline;
 }
 
-.profile:hover {
+.profileAnchor:hover {
   scale: 1.1;
 }
 
