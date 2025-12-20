@@ -4,16 +4,10 @@ header {
   color: var(--text-color-secondary);
 }
 
-#profileDesc {
-  max-width: 384px;
-  padding: 4px 0 4px 0;
-}
-
 header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 #fullProfile {
@@ -21,8 +15,19 @@ header .container {
   gap: 32px;
 }
 
+#fullProfile img {
+  width: 176px;
+  height: 176px;
+  border-radius: 50%;
+}
+
 #fullProfile>div {
   max-width: 384px;
+}
+
+#profileDesc {
+  max-width: 384px;
+  padding: 4px 0 4px 0;
 }
 
 #fullProfile h1 {
@@ -30,7 +35,6 @@ header .container {
   color: var(--text-color-primary);
   margin-bottom: 8px;
 }
-
 
 #profileInfo {
   width: 280px;
