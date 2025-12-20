@@ -33,3 +33,22 @@ p {
   color: var(--text-color-secondary);
   font: var(--text-md);
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  /*Herdado*/
+}
+
+.container {
+  padding-inline: 32px;
+  max-width: 1280px;
+  margin-inline: auto;
+}
+
+.bg-surface-color {
+  background-color: var(--surface-color);
+
+  border: solid var(--surface-color);
+  /*Só consegui aplicando isso. Não precisaria, mas aqui só funcionou assim.*/
+}
