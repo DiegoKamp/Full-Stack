@@ -8,6 +8,8 @@ nav {
   /*Uma altura "a mais" que alguns navegadores aplicam*/
   margin-block: 20px;
   /*Eixo Y*/
+
+  color: var(--text-color-secondary);
 }
 
 nav ul {

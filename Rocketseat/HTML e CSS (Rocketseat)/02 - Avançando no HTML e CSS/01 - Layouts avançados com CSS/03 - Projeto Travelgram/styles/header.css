@@ -1,16 +1,47 @@
-#profileDescription {
-  width: 592px;
-  height: 176px;
+header {
+  padding-block: 32px;
+  font: var(--text-md);
+  color: var(--text-color-secondary);
 }
 
-.header {
+#profileDesc {
+  max-width: 384px;
+  padding: 4px 0 4px 0;
+}
+
+header .container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+
 }
 
-#profileDescription {
+#fullProfile {
   display: flex;
+  gap: 32px;
 }
 
-div ul {
+#fullProfile>div {
+  max-width: 384px;
+}
+
+#fullProfile h1 {
+  font: var(--text-lg);
+  color: var(--text-color-primary);
+  margin-bottom: 8px;
+}
+
+
+#profileInfo {
+  width: 280px;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#profileInfo li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
