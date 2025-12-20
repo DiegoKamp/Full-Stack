@@ -4,6 +4,7 @@ main {
   gap: 24px;
   padding-block: 24px;
   background-color: var(--background-color);
+  justify-content: center;
 }
 
 main img {
