@@ -1,0 +1,115 @@
+/*CSS Grid*/
+
+/*
+Todo grid é composto de 2 principais grupos:
+  - container: o pai
+    - Precisa ter:
+    div{
+      display: grid;
+    }
+
+  - itens: os filhos
+*/
+
+#app01 {
+  display: grid;
+  border: dashed 2px black;
+}
+
+#app01 div {
+  border: solid 1px red;
+}
+
+#app01 span {
+  border: solid 1px blue;
+}
+
+/*
+#app {
+  display: grid;
+    grid-template: ;
+      grid-template-columns: ;
+      grid-template-rows: ;
+      grid-template-areas: ;
+}
+*/
+
+#app02 {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+#app02 div {
+  border: solid 1px red;
+}
+
+#app02 span {
+  border: solid 1px blue;
+}
+
+
+#app03 {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /*repeat(quantas vezes, o quê)*/
+}
+
+#app03 div {
+  border: solid 1px red;
+}
+
+#app03 span {
+  border: solid 1px blue;
+}
+
+#app04 {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /*A quarta parte ficou na segunda linha porque foi pedido para que a largura da div ficasse dividida em três partes */
+}
+
+#app04 div {
+  border: solid 1px red;
+}
+
+#app04 span {
+  border: solid 1px blue;
+}
+
+
+#app05 {
+  margin-top: 30px;
+  display: grid;
+  grid-template-rows: 2rem 20% 15%;
+
+  height: 20vh;
+}
+
+#app05 div {
+  border: solid 1px red;
+}
+
+#app05 span {
+  border: solid 1px blue;
+}
+
+
+#app06 {
+  margin-top: 30px;
+  display: grid;
+  grid-template-rows: 2rem 3rem;
+  grid-template-columns: repeat(2, 1fr);
+
+  height: 20vh;
+}
+
+#app06 div {
+  border: solid 1px red;
+}
+
+#app06 span {
+  border: solid 1px blue;
+}
