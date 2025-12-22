@@ -6,7 +6,7 @@ Itens:
   - grid-row:
     - grid-row-start;
     - grid-row-end;
-
+  - grid-area
 
 
 */
@@ -123,7 +123,48 @@ A numeração do grid-column é como se fossem as paredes de divisão da grid, s
   grid-row: 3/4;
 }
 
-#app03 aside {
+#app03 footer {
   grid-column: 3/4;
   grid-row: 3/4;
+}
+
+
+/*Grid-template-areas*/
+#app04 {
+  display: grid;
+  height: 40vh;
+
+  grid-template-areas:
+    "A B B"
+    "A B B"
+    "A C D";
+
+  border: dashed 2px green;
+  margin-top: 30px;
+}
+
+#app04 header {
+  border: solid 1px red;
+}
+
+#app04 main,
+#app04 aside,
+#app04 footer {
+  border: solid 1px blue;
+}
+
+#app04 header {
+  grid-area: A;
+}
+
+#app04 main {
+  grid-area: B;
+}
+
+#app04 aside {
+  grid-area: C;
+}
+
+#app04 footer {
+  grid-area: D;
 }
