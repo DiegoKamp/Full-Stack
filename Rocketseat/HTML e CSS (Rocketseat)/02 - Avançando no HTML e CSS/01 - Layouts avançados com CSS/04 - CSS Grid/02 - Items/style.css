@@ -1,0 +1,129 @@
+/*
+Itens:
+  - grid-column:
+    - grid-column-start;
+    - grid-column-end;
+  - grid-row:
+    - grid-row-start;
+    - grid-row-end;
+
+
+
+*/
+
+#app01 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  height: 40vh;
+  border: dashed 2px green;
+}
+
+#app01 .primary {
+  border: solid 1px red;
+}
+
+#app01 .secondary {
+  border: solid 1px blue;
+}
+
+/*
+A numeração do grid-column é como se fossem as paredes de divisão da grid, se tem três colunas de conteúdos, são quatro paredes de "sustentação" da grid, portanto, neste caso vais de 1 a 4. 
+*/
+
+#app01 div:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+#app01 div:nth-child(2) {
+  /*
+  grid-column-start: 1;
+  grid-column-end: 3;
+  shorthand: 1/3;
+  */
+  grid-column: 1/3;
+}
+
+#app01 div:nth-child(4) {
+  grid-column: 1/4;
+}
+
+/*Imaginando o grid num layout de página*/
+#app02 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  height: 40vh;
+  border: dashed 2px green;
+  margin-top: 30px;
+}
+
+#app02 header {
+  border: solid 1px red;
+}
+
+#app02 main,
+#app02 aside,
+#app02 footer {
+  border: solid 1px blue;
+}
+
+#app02 header {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+#app02 main {
+  /*
+  grid-column-start: 1;
+  grid-column-end: 3;
+  shorthand: 1/3;
+  */
+  grid-column: 1/3;
+}
+
+#app02 footer {
+  grid-column: 1/4;
+}
+
+/*Outro layout proposto*/
+#app03 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  height: 40vh;
+  border: dashed 2px green;
+  margin-top: 30px;
+}
+
+#app03 header {
+  border: solid 1px red;
+}
+
+#app03 main,
+#app03 aside,
+#app03 footer {
+  border: solid 1px blue;
+}
+
+#app03 header {
+  /* grid-column: 1/2; */
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+#app03 main {
+  grid-column: 2/4;
+  grid-row: 1/3;
+}
+
+#app03 aside {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+#app03 aside {
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
