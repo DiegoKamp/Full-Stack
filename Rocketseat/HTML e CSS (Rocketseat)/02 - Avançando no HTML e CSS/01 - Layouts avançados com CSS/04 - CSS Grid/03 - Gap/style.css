@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+}
+
+#app01 {
+  display: grid;
+  height: 100vh;
+
+  grid-template-areas:
+    "A B B"
+    "A B B"
+    "A C D";
+
+  border: dashed 2px green;
+
+  /*
+  column-gap: 20px;
+  row-gap: 20px;
+  */
+  gap: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#app01 header {
+  border: solid 1px red;
+}
+
+#app01 main,
+#app01 aside,
+#app01 footer {
+  border: solid 1px blue;
+}
+
+#app01 header {
+  grid-area: A;
+}
+
+#app01 main {
+  grid-area: B;
+}
+
+#app01 aside {
+  grid-area: C;
+}
+
+#app01 footer {
+  grid-area: D;
+}
