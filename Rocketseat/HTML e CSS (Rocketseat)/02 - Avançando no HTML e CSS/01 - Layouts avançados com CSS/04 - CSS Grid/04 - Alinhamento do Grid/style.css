@@ -63,9 +63,33 @@ Existem 9 propriedades fundamentais:
   place-content: space-between;
   place-content: space-evenly;
 
+
+  /*Diminui o tamanho do elemento, vendo apenas o item que está digitado*/
+  /*Eixo y*/
+  align-items: start;
+  align-items: end;
+  align-items: center;
+
+  /*Eixo x*/
+  justify-items: start;
+  justify-items: end;
+  justify-items: center;
+
+  /*Substitui o align e o justify, aplicando a propriedade aos dois eixos*/
+  place-items: start;
+  place-items: end;
+  place-items: center;
 }
 
 .grid>div {
   background-color: cornflowerblue;
   color: brown;
+}
+
+.grid div:nth-child(2) {
+  align-self: start;
+}
+
+.grid div:nth-child(5) {
+  justify-self: end;
 }
