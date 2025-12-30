@@ -1,0 +1,71 @@
+/*
+Existem 9 propriedades fundamentais:
+  
+  Aplicadas em container:
+    align-content
+    justify-content
+    place-content
+  
+    align-item
+    justify-item
+    place-item
+  
+  Aplicadas em Itens:
+  
+    align-self
+    justify-self
+    place-self
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+
+
+  /*Eixo y*/
+  align-content: center;
+  align-content: start;
+  align-content: end;
+
+  align-content: space-around;
+  align-content: space-between;
+  align-content: space-evenly;
+
+  /*Eixo x*/
+  justify-content: center;
+  justify-content: start;
+  justify-content: end;
+
+  justify-content: space-around;
+  justify-content: space-between;
+  justify-content: space-evenly;
+
+
+  /*Substitui o align e o justify, aplicando a propriedade aos dois eixos*/
+  place-content: start;
+  place-content: end;
+  place-content: center;
+
+  place-content: space-around;
+  place-content: space-between;
+  place-content: space-evenly;
+
+}
+
+.grid>div {
+  background-color: cornflowerblue;
+  color: brown;
+}
