@@ -6,10 +6,16 @@ body {
   display: grid;
   height: 100vh;
 
-  grid-template-areas:
+  /* grid-template-areas:
     "A B B"
     "A B B"
-    "A C D";
+    "A C D"; */
+
+
+  grid-template:
+    "A B B" 80px
+    "A B B" 50px
+    "A C D" 30px / 80px 1fr 2fr;
 
   border: dashed 2px green;
 
