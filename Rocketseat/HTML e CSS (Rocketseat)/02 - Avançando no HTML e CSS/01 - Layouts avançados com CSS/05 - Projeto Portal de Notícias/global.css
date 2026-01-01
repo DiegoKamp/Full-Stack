@@ -15,10 +15,55 @@
   --stroke-color: #1E293B;
   --text-color-primary: #F1F5F9;
   --text-color-secondary: #CBD5E1;
+
+  /*Variáveis de Tipografia*/
+  /* font: [style] [variant] [weight] [size]/[line-height] [family]; */
+  --h1: normal 800 24px/1.35 "Archivo",
+    sans-serif;
+  --h2: normal 800 16px/1.4 "Archivo",
+    sans-serif;
+  --h3: normal 800 14px/1.4 "Archivo",
+    sans-serif;
+  --text-span: normal 600 14px/1.45 "Archivo",
+    sans-serif;
+  --text: normal 400 16px/1.4 "Archivo",
+    sans-serif;
+  --text-sm: normal 400 14px/1.6 "Archivo",
+    sans-serif;
+
 }
 
+
 body {
+  font: var(--text);
   color: var(--text-color-primary);
   background-color: var(--bg-color);
+}
 
+h1,
+h2,
+h3 {
+  color: inherit;
+}
+
+h1 {
+  font: var(--h1);
+}
+
+h2 {
+  font: var(--h2);
+}
+
+h3 {
+  font: var(--h3);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color-secondary);
+  font: var(--text-span);
+}
+
+a:hover {
+  color: var(--brand-color-light);
 }
