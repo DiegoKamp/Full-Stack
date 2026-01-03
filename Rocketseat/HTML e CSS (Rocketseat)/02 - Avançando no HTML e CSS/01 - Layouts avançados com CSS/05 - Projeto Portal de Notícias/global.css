@@ -40,10 +40,19 @@ body {
   background-color: var(--bg-color);
 }
 
+main {
+  margin-top: 40px;
+}
+
+
 h1,
 h2,
 h3 {
   color: inherit;
+}
+
+img {
+  max-width: 100%;
 }
 
 .container {
@@ -52,6 +61,9 @@ h3 {
   margin-inline: auto;
 }
 
+/* hr {
+  color: var(--stroke-color);
+} */
 
 h1 {
   font: var(--h1);
@@ -73,14 +85,4 @@ a {
 
 a:hover {
   color: var(--brand-color-light);
-}
-
-/*Utility-first*/
-
-.grid {
-  display: grid;
-}
-
-.grid-flow-col {
-  grid-auto-flow: column;
 }
