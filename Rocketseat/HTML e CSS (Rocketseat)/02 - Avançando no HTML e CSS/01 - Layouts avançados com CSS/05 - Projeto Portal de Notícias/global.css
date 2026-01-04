@@ -30,6 +30,8 @@
     sans-serif;
   --text-sm: normal 400 14px/1.6 "Archivo",
     sans-serif;
+  --font-family: "Archivo",
+    sans-serif;
 
 }
 
@@ -61,20 +63,32 @@ img {
   margin-inline: auto;
 }
 
-/* hr {
-  color: var(--stroke-color);
-} */
-
-h1 {
-  font: var(--h1);
+.content-tag {
+  display: inline-block;
+  /* display: inline-block; permite ficar inline e a conta do padding fica igual ao block */
+  padding: 4px 8px;
+  border: 8px;
+  border-radius: 4px;
+  background-color: var(--brand-color-dark);
+  box-sizing: border-box;
+  font: normal 500 10px/1.2 var(--font-family);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-color-primary);
+  box-shadow: 0px 4px 16px rgba(2, 6, 23, 0.25);
 }
 
-h2 {
-  font: var(--h2);
-}
 
-h3 {
-  font: var(--h3);
+#hr {
+  border: 0;
+  height: 1px;
+  background-color: var(--stroke-color);
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
 
 a {

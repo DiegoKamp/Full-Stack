@@ -2,14 +2,9 @@
   padding-block: 20px;
 
   /*Nesting CSS*/
-
-  /*
-  div:nth-child (2) {
+  div:nth-child(2) {
     margin-inline: auto
-  } 
-  
-  Não funcionou!
-  */
+  }
 }
 
 #primary div {
@@ -18,9 +13,12 @@
   gap: 8px;
 }
 
+/* 
+Usado no Nesting CSS acima
+
 #primary div:nth-child(2) {
   margin-inline: auto;
-}
+} */
 
 #primary div:nth-child(3) {
   justify-self: end;
@@ -28,7 +26,5 @@
 
 #secondary {
   padding-block: 14px;
-  border: solid 1px var(--stroke-color);
-  border-inline: none;
   justify-content: space-between;
 }
