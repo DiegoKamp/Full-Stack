@@ -27,4 +27,10 @@ Usado no Nesting CSS acima
 #secondary {
   padding-block: 14px;
   justify-content: space-between;
+
+  >a {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
 }
