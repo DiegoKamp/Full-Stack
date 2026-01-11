@@ -101,3 +101,7 @@ a {
 a:hover {
   color: var(--brand-color-light);
 }
+
+p {
+  color: var(--text-color-secondary);
+}

@@ -108,3 +108,10 @@ section header {
   }
 
 }
+
+#ai {
+  &>div {
+    grid-template-rows: repeat(4, 292px);
+  }
+
+}
