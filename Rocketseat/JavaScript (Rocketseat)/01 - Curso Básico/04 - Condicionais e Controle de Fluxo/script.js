@@ -151,9 +151,9 @@ try { //Tenta executar algo
 
 try { //Tenta executar algo
   console.log(result);
-} catch (error) { // Captura o erro (neste caso definido como error, mas pode ser outra palavra) para tratar (execução do catch)
-  console.log(error); //Apresenta a mensagem de erro capturado (pode ser uma outra mensagem definida)
-  console.log("Está vacilando aí, hein!");
+} catch (errou) {
+  console.log(errou);
+  console.log("Está vacilando brabo, hein!");
 } finally { // Executa, independentemente do erro
   console.log("Fim da aplicação");
 }
