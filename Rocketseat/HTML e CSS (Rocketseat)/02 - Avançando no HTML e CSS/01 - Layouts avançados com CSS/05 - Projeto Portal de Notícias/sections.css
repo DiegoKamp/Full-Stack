@@ -31,6 +31,8 @@ section header {
 
 
 #featured {
+  grid-area: featured;
+
   img {
     height: 100%;
     object-fit: cover;
@@ -83,6 +85,8 @@ section header {
 
 #weekly {
 
+  grid-area: weekly;
+
   &>div {
     grid-template-columns: repeat(4, 292px);
   }
@@ -110,8 +114,56 @@ section header {
 }
 
 #ai {
+
+  grid-area: ai;
+
   &>div {
-    grid-template-rows: repeat(4, 292px);
+    grid-template-rows: repeat(4, 176px);
   }
 
+  img {
+    height: 176px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  h3 {
+    margin-block: 8px 4px;
+    /* margin-top: 8px;
+    margin-bottom: 4px; */
+  }
+
+}
+
+#add {
+  margin-bottom: 30px;
+}
+
+#more {
+
+  h3 {
+    margin-top: 8px;
+  }
+
+}
+
+aside article img {
+  width: 72px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+#grid {
+  display: grid;
+  grid-template-rows: repeat(5, 72px);
+  gap: 32px;
+}
+
+
+aside {
+  grid-area: aside;
+
+  h3 {
+    font: var(--h2);
+  }
 }
