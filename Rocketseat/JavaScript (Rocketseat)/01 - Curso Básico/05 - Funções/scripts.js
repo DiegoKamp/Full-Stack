@@ -52,3 +52,20 @@ function FullName(Nome, Sobrenomes = "", UltimoSobrenome = "") {
 
 FullName("Diego", "Quelhas");
 
+// Podemos retornar o resultado de uma função para ser usada em outro lugar
+
+function sum(a, b) {
+  let sumResult = a + b
+
+  return sumResult
+}
+
+let response = sum(7, 18) // Atribuindo o resultado (por que temos o return) da função a uma variável
+console.log(response) // Exibindo a variável
+
+console.log(sum(9, 65)); // Podemos exibir o resultado diretamente pel console.log
+
+
+
+
+
