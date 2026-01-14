@@ -19,8 +19,14 @@
   --gray-600: (#0D0E11);
 
   /*Tipografia*/
+  /* font-style font-weight font-size/line-height font-family */
+  --title-lg: normal 700 56px/1.2 "Asap", sans-serif;
+  --title-md: normal 700 24px/1.2 "Asap", sans-serif;
+  --title-sm: normal 700 16px/1.2 "Asap", sans-serif;
 
+  --subtitle: normal 400 20px/1.2 "Inconsolata", monospace;
 
-
+  --text-md: normal 400 16px/1.4 "Maven Pro", sans-serif;
+  --text-sm: normal 400 14px/1.4 "Maven Pro", sans-serif;
 
 }
