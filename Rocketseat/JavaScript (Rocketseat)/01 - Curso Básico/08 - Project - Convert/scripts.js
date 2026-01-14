@@ -1,8 +1,10 @@
 // Verificando conexão
 console.log("Olá, Diego aqui!")
 
-/*Recuperando os elementos do index*/
+//Recuperando os elementos do index
+const form = document.querySelector("form")
 const amount = document.getElementById("amount");
+const currency = document.getElementById("currency");
 
 
 
@@ -14,6 +16,11 @@ amount.addEventListener("input", () => {
 
   const hasCharactersRegex = /\D+/g
   amount.value = amount.value.replace(hasCharactersRegex, "") // Recebe o próprio amount, mas somente números
-
 });
 
+//Capturando o evento submit (enviar) do formulário
+form.onsubmit = function (event) {
+  event.preventDefault()
+
+  console.log(currency.value)
+}
