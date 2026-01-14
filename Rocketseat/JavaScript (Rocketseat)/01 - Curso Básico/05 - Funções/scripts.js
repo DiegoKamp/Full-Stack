@@ -129,5 +129,60 @@ console.log(showMessage04("Diego"));
 
 /*Arrow Function*/
 
+const showMessage05 = () => {
+  console.log("Olá")
+}
+
+console.log(showMessage05);
+showMessage05();
+
+const showMessage06 = (username) => {
+  console.log("Olá, " + username)
+}
+
+console.log(showMessage06);
+showMessage06("Diego");
 
 
+const showMessage07 = (username, email) => {
+  console.log(`Olá, ${username}. Você está logado pelo email: ${email}.`)
+}
+
+console.log(showMessage07);
+showMessage07("Diego", "diegokamp@gmail.com");
+
+/*Callback function*/
+//Uma função passada para outra função como argumento.
+
+function execute(taskName, callback) {
+  console.log("Executando a tarefa: ", taskName)
+
+  callback();
+}
+
+function callback() {
+  console.log("Tarefa finalizada")
+}
+
+function qualquerNome() {
+  console.log("Erro na execução da tarefa")
+}
+
+// Passando para a função
+execute("Download do arquivo...", callback)
+execute("Download do arquivo...", qualquerNome)
+
+
+// Criando uma função anônima no próprio parâmetro
+execute("Upload do arquivo", function () {
+  console.log("Função de callback com uma função anônima.")
+})
+
+// Criando uma arrow function no próprio parâmetro
+execute("Excluindo arquivo...", () => {
+  console.log("Função de callback com uma arrow function")
+})
+
+// Criando uma arrow function sem as chaves, caso a função tenha apenas uma linha de código
+
+execute("Salvando arquivo...", () => console.log("Função de callback com uma arrow function sem chaves"))
