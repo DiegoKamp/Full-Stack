@@ -65,7 +65,69 @@ console.log(response) // Exibindo a variável
 
 console.log(sum(9, 65)); // Podemos exibir o resultado diretamente pel console.log
 
+// É possível executar uma função antes mesmo de declará-la
 
+showMessage01("Olá!") // Uso da função
+
+showMessage02("Olá!!!")
+
+function showMessage01(message) {
+  console.log(message)
+} // Declaração da função
+
+function showMessage02(message) {
+  console.log(message)
+  endLine() // Função sendo executada dentro de outra função e antes de ser declarada
+
+
+  function endLine() {
+    console.log("-----------")
+  }
+}
+
+
+/*
+Comentário de documentação em JavaScript (sintaxe de JSDoc).
+O JSDoc é um padrão para importar documentação no código-fonte a partir desses comentários
+
+Etapas:
+1- Fazer a função
+2- Na linha imediatamente acima da função, colocamos /**
+3- Escrevemos sobre detalhes dos parâmetros e resultados
+*/
+
+/**
+ * Authenticates the user
+ * 
+ * @param {String} email user email.
+ * @param {String} password more than 6 characters.
+ * @returns {Number} clientID.
+ */
+function signIn(email, password) {
+  // Fluxo de autenticação do usuário
+
+  return 7;
+}
+
+signIn();
+
+/*Função Anônima*/
+
+let showMessage03 = function () {
+  return "Olá, Diego"
+}
+
+console.log(showMessage03); // Vai mostrar a função
+
+console.log(showMessage03()); // Vai executar a função
+
+const showMessage04 = function (name) {
+  return "Olá, " + name
+}
+
+console.log(showMessage04("Diego"));
+
+/*Arrow Function*/
 
 
 
