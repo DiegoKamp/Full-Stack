@@ -10,7 +10,7 @@
 <body>
 
   <!--Método get aparece na url-->
-  <!--Método post _não_ aparece na url-->
+  <!--Método post NÃO aparece na url-->
 
 
   <!-- Atributos do button:
@@ -62,8 +62,34 @@ Type:
       Usar o title quando restringir para que o usuário entenda melhor o campo
     Inputmode: Abre o campo específico (no celular). Por exemplo: se receber apenas número, abrirá o teclado numérico.
   File:
+    Precisa colocar no <form> enctype = "multipart/form-data"
+    Value: Recebe o primeiro arquivo (caso tenha mais).
+    Files: Os demais vêm aqui.
+    Multiple: Permite mais de um arquivo
+    Accept: Limita os tipos de arquivos aceitos (impedindo a seleção de arquivos fora do especificado). 
+      Exemplos:(.doc , image/* , video/* , audio/mp3 , .html , etc.)
+      Por extensão: (.doc , .html , etc., .mkv)
+      Por categoria: (video/*) O asterisco quer dizer todas as extensões desse tipo de arquivo
+      Por categoria e extensão: (audio/mp3)
   Range:
+    Controle para selecionar um valor numérico (Slider, dial control)
+    Min / Max: Por padrão o mínimo é 0 e o máximo é 100.
+    Step: Incremento, vai pulando no intervalo escolhido
+    Value: Valor inicial. Por padrão, começa na metade (se possível)
   Color:
+    Interface para selecionar cor (color picker)
+    Value: Valor predefinido
+      RGB, mas pode trocar para outros sistemas no momenclatura
+      Se for inválido, será preto
+    List: <datalist> <option>
+      Dá algumas sugestões ao usuário, mas ainda tem a liberdade de escolher qualquer outro valor
+  Checkbox:
+    Caixas que podem ser marcadas. Se não for marcado, nenhum valor será enviado. Se marcado, o valor "on" é enviado. Podem ser agrupadas pela propriedade name.
+    Value: Define o valor do input
+    Checked: Já começa marcado inicialmente
+  Radio:
+    Usado para selecionar apenas uma opção entre as existentes
+  Hidden:
 
 
 -->
@@ -72,14 +98,38 @@ Type:
   <div>
     <form action="" method="post">
       <input type="text" name="nome">
-      <br>
+      <br><br>
       <input min="18" max="36" step="2" type="number">
-      <br>
+      <br><br>
       <input pattern=".+@gulugulu\.com\.br" title="Somente email do gulugulu" type="email">
+      <br><br>
       <input minlength="8" maxlength="20" inputmode="numeric" type="password">
+      <br><br>
+      <input accept="audio/*" type="file">
+      <br><br>
+      <input min="50" max="100" step="5" value="90" type="range">
+      <br><br>
+
+      <!-- Não ficam à mostra -->
+      <datalist id="colorPicker1">
+        <option value="#000"></option>
+        <option value="#fff"></option>
+        <option value="#f00"></option>
+        <option value="#0f0"></option>
+        <option value="#00f"></option>
+      </datalist>
+      <input type="color" list="colorPicker1" name="color">
+      <br><br>
+      <input type="checkbox" name="carro" value="Bugatti" checked> Bugatti
+      <br><br>
+      <!--Se for marcado, receberemos carro = BMW-->
+      <input type="checkbox" name="carro" value="Ferrari"> Ferrari
+      <br><br>
 
 
 
+
+      <br><br>
       <button type="submit">Submit</button>
     </form>
   </div>

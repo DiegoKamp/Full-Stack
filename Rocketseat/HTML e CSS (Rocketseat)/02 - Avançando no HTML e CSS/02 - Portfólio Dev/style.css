@@ -29,3 +29,19 @@
   --text-md: normal 400 16px/1.4 "Maven Pro", sans-serif;
   --text-sm: normal 400 14px/1.4 "Maven Pro", sans-serif;
 }
+
+body {
+  /* max-width: 1366px; */
+
+  /* background-color:
+
+    #16181d; */
+}
+
+header {
+  height: 750px;
+  background-image:
+    url(./assets/Background_Intro.png);
+  object-fit: fill;
+
+}
