@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <!--Método get aparece na url-->
+  <!--Método post _não_ aparece na url-->
+
+
+  <!-- Atributos do button:
+  Type:
+    Submit (padrão, envia o formulário)
+    Reset (limpa os dados)
+    button (não envia o formulário, faz outra coisa por JS)
+  Autofocus: foco automático
+  Disable: desabilitar o botão
+  Name:nome do botão  
+  Value: valor do botão
+  -->
+
+
+  <!-- Input
+Atributos fundamentais: 
+  Name: O valor do input ao enviar o formulário
+  Type: define o tipo de input
+Atributos gerais:
+  Value: Valor inicial. Para mudar precisa apagar
+  Autocomplete: Ajuda a escrita do usuário
+  Size (!): Tamanho numérico do campo
+  Autofocus: Foca no campos ao carregar a página
+  Disabled: Desabilita o campo
+  Readonly (!): Apenas leitura
+  Form (!): Para linkar ao ID do formulário, caso não esteja dentro da tag form
+  Required (!): Obrigatório
+  Placeholder (!): "Dica ao usuário do que esse campo é"
+  OBS: (!): Não são todos os campos que aceitam esse atributo
+
+Type:
+  Text:
+  Number: 
+    Interface com botão pra cima e pra baixo
+    Min e/ou Max: Define os valores limites
+    Step: Incremento do valor
+  Email:
+    Valida um formato de email
+    Multiple: Aceita 1 ou mais de um email separado por vírgulas
+    Minlength / Maxlength: Define o número limite de caracteres
+    Pattern: Expressão regular para validar o campo
+      Title: Define a mensagem ao usuário ao tentar enviar com algo fora do padrão
+  Password:
+    Esconde o que está sendo digitado. Estilo depende do User Agent
+    Minlength / Maxlength: Define o número limite de caracteres
+    Pattern: Define o "padrão", excluindo situações, aumentando a segurança
+      Exemplo: pattern = "[0-9a-fA-F]{8,20}"
+      Aceita números de 0 até 9, letras de a até f e letras A até F (Sistema hexadecimal)
+      Usar o title quando restringir para que o usuário entenda melhor o campo
+    Inputmode: Abre o campo específico (no celular). Por exemplo: se receber apenas número, abrirá o teclado numérico.
+  File:
+  Range:
+  Color:
+
+
+-->
+
+
+  <div>
+    <form action="" method="post">
+      <input type="text" name="nome">
+      <br>
+      <input min="18" max="36" step="2" type="number">
+      <br>
+      <input pattern=".+@gulugulu\.com\.br" title="Somente email do gulugulu" type="email">
+      <input minlength="8" maxlength="20" inputmode="numeric" type="password">
+
+
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
