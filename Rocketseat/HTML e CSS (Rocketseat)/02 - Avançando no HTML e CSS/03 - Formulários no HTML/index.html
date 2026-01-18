@@ -88,11 +88,46 @@ Type:
     Value: Define o valor do input
     Checked: Já começa marcado inicialmente
   Radio:
-    Usado para selecionar apenas uma opção entre as existentes
+    Usado para selecionar apenas uma opção entre as existentes. Manter o mesmo name
+    Value: Define o valor do input
+    Checked: Já começa marcado inicialmente
   Hidden:
+    Não aparece para o usuário, mas será enviado pelo formulário.
+  -->
 
 
--->
+  <!-- Label
+    Em bora o placeholder seja uma "dica" ao usuário, os leitores de tela (acessibilidade) não reconhecem essa "dica", por isso usamos o label.
+    O form do label está atrelado ao id do input. Isso serve para que o usuário, ao clicar no label, seja direcionado ao campo do input.
+    Podemos não usar o form, mas nesse caso, colocamos o input dentro do label.
+    Existe a possibilidade de esconder o label (pelo CSS), mas deve estar no HTML.
+  -->
+
+
+  <!-- Textarea
+    Define um espaço para mais de uma linha de texto
+    Atributos:
+      Rows: Melhor usar pelo CSS
+      Cols (columns): Melhor usar pelo CSS
+      Maxlength / Minlength: Limita o número de caracteres.
+      wrap:
+  -->
+
+
+  <!-- Select
+    O usuário pode selecionar dentre as opções
+    Atributos:
+      Multiple: Permite mais de uma seleção
+      Size: Define o tamanho do campo de rolagem, apresentando x opções por vez.
+    Optgroup:
+      Estabelece opções em grupos/categorias
+  -->
+
+
+  <!-- Fieldset
+    Agrupamento de campos com o mesmo propósito
+    Legend: Nomeia o grupo de inputs
+  -->
 
 
   <div>
@@ -109,7 +144,6 @@ Type:
       <br><br>
       <input min="50" max="100" step="5" value="90" type="range">
       <br><br>
-
       <!-- Não ficam à mostra -->
       <datalist id="colorPicker1">
         <option value="#000"></option>
@@ -122,25 +156,56 @@ Type:
       <br><br>
       <input type="checkbox" name="carro" value="Bugatti" checked> Bugatti
       <br><br>
-      <!--Se for marcado, receberemos carro = BMW-->
+      <!--Se for marcado, receberemos carro = Ferrari-->
       <input type="checkbox" name="carro" value="Ferrari"> Ferrari
       <br><br>
-
-
-
-
+      <input type="radio" name="sexo" value="Homem"> Homem
+      <input type="radio" name="sexo" value="Mulher"> Mulher
+      <br><br>
+      <label for="name">Nome</label>
+      <input type="text" placeholder="Primeiro nome" id="name">
+      <br><br>
+      <label>
+        Sobrenome
+        <input type="text" placeholder="Sobrenome">
+      </label>
+      <br><br>
+      <select name="food" id="">
+        <option value="Pizza">Pizza</option>
+        <option value="Hambúrguer">Hambúrguer</option>
+        <option value="Comida Tailandesa">Comida Tailandesa</option>
+        <option value="Comida Japonesa">Comida Japonesa</option>
+        <option value="Comida Mexicana">Comida Mexicana</option>
+      </select>
+      <br><br>
+      <select name="power" id="">
+        <option value="" disabled selected>Selecione</option>
+        <optgroup label="Fogo">
+          <option value="Bola de fogo">Bola de fogo</option>
+          <option value="Chão flamejante">Chão flamejante</option>
+        </optgroup>
+        <optgroup label="Água">
+          <option value="Desviar curso d'água">Desviar curso d'água</option>
+          <option value="Respiração debaixo d'água">Respiração debaixo d'água</option>
+        </optgroup>
+        <optgroup label="Terra">
+          <option value="Armadura de pedra">Armadura de pedra</option>
+          <option value="Terremoto">Terremoto</option>
+        </optgroup>
+      </select>
+      <br><br>
+      <fieldset>
+        <legend>Contato</legend>
+        <label hidden>Nome completo</label><input type="text" placeholder="Nome completo">
+        <br><br>
+        <label hidden>Endereço</label><input type="text" placeholder="Endereço">
+        <br><br>
+        <button>Enviar</button>
+      </fieldset>
       <br><br>
       <button type="submit">Submit</button>
     </form>
   </div>
-
-
-
-
-
-
-
-
 </body>
 
 </html>
