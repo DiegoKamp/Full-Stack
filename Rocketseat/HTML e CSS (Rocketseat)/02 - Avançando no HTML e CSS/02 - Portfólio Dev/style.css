@@ -5,18 +5,18 @@
 
 :root {
   /*Cores*/
-  --red: (#E3646E);
-  --purple: (#BB72E9);
-  --blue: (#3996DB);
-  --green: (#82BC4F);
-  --yellow: (#EABD5F);
+  --red: #E3646E;
+  --purple: #BB72E9;
+  --blue: #3996DB;
+  --green: #82BC4F;
+  --yellow: #EABD5F;
 
-  --gray-100: (#E2E4E9);
-  --gray-200: (#C0C4CE);
-  --gray-300: (#878EA1);
-  --gray-400: (#292C34);
-  --gray-500: (#16181D);
-  --gray-600: (#0D0E11);
+  --gray-100: #E2E4E9;
+  --gray-200: #C0C4CE;
+  --gray-300: #878EA1;
+  --gray-400: #292C34;
+  --gray-500: #16181D;
+  --gray-600: #0D0E11;
 
   /*Tipografia*/
   /* font-style font-weight font-size/line-height font-family */
@@ -31,17 +31,65 @@
 }
 
 body {
-  /* max-width: 1366px; */
-
-  /* background-color:
-
-    #16181d; */
+  background-color: #16181d;
 }
 
 header {
   height: 750px;
   background-image:
     url(./assets/Background_Intro.png);
-  object-fit: fill;
+  background-size: 100%;
+
+
+
+
+}
+
+#introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tech {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+
+  .tag {
+    text-align: center;
+    padding: 8px 16px;
+    border-radius: 16px;
+    background-color: var(--gray-400);
+    box-sizing: border-box;
+    color: var(--gray-200);
+    box-shadow: 0px 4px 16px black;
+    display: block;
+
+    img {
+      height: 24px;
+      aspect-ratio: 1/1;
+    }
+  }
+
+  #github:hover {
+    box-shadow: 0px 4px 16px rgb(152, 207, 12)
+  }
+
+  #html:hover {
+    box-shadow: 0px 4px 16px rgb(152, 207, 12)
+  }
+
+  #css:hover {
+    box-shadow: 0px 4px 16px rgb(152, 207, 12)
+  }
+
+  #js:hover {
+    box-shadow: 0px 4px 16px rgb(152, 207, 12)
+  }
+
+  #others:hover {
+    box-shadow: 0px 4px 16px rgb(152, 207, 12)
+  }
 
 }
