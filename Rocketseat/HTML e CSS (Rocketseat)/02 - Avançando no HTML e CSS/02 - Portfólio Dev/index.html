@@ -19,7 +19,7 @@
 
 <body>
   <header>
-    <div id="introduction">
+    <div id="introduction" class="flex">
       <div class="fotoContainer"><img id="foto" src="./assets/unnamed.jpg" alt="Foto de perfil">
         <svg width="38" height="33" viewBox="0 0 38 33" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -32,8 +32,8 @@
       <p>Transformo necessidades em aplicações reais, envolventes e funcionais. Amo aprender e resolver desafios
         lógicos, incluindo a programação. Meu melhor desempenho está nas seguintes tecnologias: </p>
 
-      <div class="tech">
-        <span class="tag" id="github">
+      <div class="tech flex">
+        <button class="tag flex" id="github">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M11.9999 2.49084C6.61589 2.49084 2.25 6.85577 2.25 12.2408C2.25 16.5487 5.04365 20.2032 8.91759 21.4926C9.4047 21.583 9.58359 21.2811 9.58359 21.0236C9.58359 20.7911 9.57455 20.023 9.57035 19.2083C6.85791 19.7981 6.28556 18.058 6.28556 18.058C5.84204 16.931 5.203 16.6314 5.203 16.6314C4.31823 16.0262 5.26969 16.0388 5.26969 16.0388C6.24858 16.1074 6.76427 17.0436 6.76427 17.0436C7.63387 18.5338 9.04514 18.103 9.60151 17.8541C9.68902 17.2239 9.9417 16.7936 10.2205 16.5501C8.05494 16.3039 5.77827 15.4678 5.77827 11.7319C5.77827 10.6674 6.1593 9.79763 6.783 9.11468C6.68161 8.86927 6.34788 7.87762 6.87729 6.53464C6.87729 6.53464 7.69586 6.2726 9.55905 7.53404C10.3369 7.31785 11.1712 7.20919 11.9999 7.20548C12.8282 7.20919 13.6629 7.31753 14.4422 7.53372C16.3032 6.27227 17.1208 6.53431 17.1208 6.53431C17.6515 7.87713 17.3177 8.86895 17.2165 9.11436C17.8417 9.79731 18.22 10.6671 18.22 11.7315C18.22 15.4763 15.9391 16.3007 13.768 16.5422C14.1179 16.8448 14.4295 17.4383 14.4295 18.3478C14.4295 19.6523 14.4182 20.7023 14.4182 21.0234C14.4182 21.2829 14.5938 21.5869 15.0879 21.4911C18.9596 20.2005 21.75 16.5471 21.75 12.2408C21.7498 6.85609 17.3844 2.49084 11.9999 2.49084Z"
@@ -43,28 +43,28 @@
               fill="currentColor" />
           </svg>
           GitHub
-        </span>
-        <span class="tag" id="html"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+        </button>
+        <button class="tag flex" id="html"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
               d="M16.0001 23.4133L21.4662 21.9067L22.2048 13.7733H12.4814L12.2396 11.0667H22.4466L22.7152 8.41333H9.28497L10.0371 16.4267H19.2905L18.9816 19.8667L16.0001 20.6667L13.0186 19.8667L12.8305 17.6533H10.1445L10.534 21.9067L16.0001 23.4133ZM5.34991 4H26.6502L24.7297 25.6L16.0001 28L7.27043 25.6L5.34991 4Z"
               fill="currentColor" />
-          </svg> HTML 5</span>
-        <span class="tag" id="css"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+          </svg> HTML 5</button>
+        <button class="tag flex" id="css"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
               d="M5.43317 4L7.3566 25.5936L15.9873 28L24.6421 25.5848L26.567 4H5.43317ZM22.5712 8.94718L21.9309 16.1407L21.9328 16.1795L21.9301 16.2689V16.2681L21.4752 21.2979L21.4251 21.7448L16.0001 23.2453L15.9959 23.2491L10.5802 21.7402L10.2135 17.5817H12.8692L13.0577 19.6962L16.0009 20.4939L16.0001 20.4954V20.4951L18.9542 19.6861L19.2664 16.2427H13.0909L13.038 15.6606L12.9173 14.2968L12.8539 13.5646H19.5011L19.7429 10.8865H9.61862L9.56564 10.3048L9.44512 8.94068L9.38161 8.20841H22.6345L22.5712 8.94718Z"
               fill="currentColor" />
           </svg>
-          CSS 3</span>
-        <span class="tag" id="js"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+          CSS 3</button>
+        <button class="tag flex" id="js"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
               d="M3.00031 21.7468L6.01847 19.95C6.60068 20.9659 7.13073 21.8251 8.40133 21.8251C9.61884 21.8251 10.3869 21.3587 10.3869 19.533V7.13492H14.0935V19.5843C14.0935 23.3607 11.8433 25.08 8.56063 25.08C7.4001 25.1418 6.24776 24.8563 5.25539 24.2611C4.26301 23.666 3.47618 22.79 3.00031 21.7468ZM16.1075 21.355L19.1256 19.6356C19.4612 20.3054 19.9821 20.8685 20.6283 21.2601C21.2746 21.6517 22.0201 21.8559 22.7791 21.8494C24.3152 21.8494 25.2937 21.0938 25.2937 20.0517C25.2937 18.8016 24.2877 18.3585 22.5932 17.6262L21.6697 17.24C18.9957 16.1205 17.2216 14.7137 17.2216 11.7443C17.2216 9.0091 19.3399 6.92596 22.6492 6.92596C23.7214 6.8495 24.7929 7.08537 25.7297 7.60414C26.6666 8.12291 27.4275 8.90162 27.9174 9.8431L25.0311 11.6669C24.8416 11.1996 24.5123 10.7999 24.0868 10.5208C23.6613 10.2418 23.1596 10.0965 22.6482 10.1043C22.4253 10.0821 22.2001 10.1059 21.9871 10.1741C21.774 10.2424 21.5778 10.3536 21.4108 10.5006C21.2439 10.6476 21.1099 10.8273 21.0175 11.0281C20.9251 11.2289 20.8763 11.4465 20.8741 11.6669C20.8741 12.7612 21.5625 13.2034 23.1498 13.8807L24.0762 14.2715C27.2271 15.6 29.0003 16.9545 29.0003 20.0013C29.0003 23.2832 26.3794 25.0809 22.8587 25.0809C19.4167 25.0809 17.1932 23.4652 16.1075 21.355Z"
               fill="currentColor" />
           </svg>
-          JavaScript</span>
-        <span class="tag" id="others"> Outros em breve</span>
+          JavaScript</button>
+        <button class="tag flex" id="others"> Outros em breve</button>
       </div>
 
       <svg id="down" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -77,11 +77,28 @@
   </header>
 
   <main>
-    <section>
+    <section id="projects" class="flex">
       <p>Meu trabalho</p>
       <h2>Veja alguns dos meus projetos em destaque</h2>
       <div>
-
+        <div class="card">
+          <h3>Página de Receita</h3>
+        </div>
+        <div class="card">
+          <h3>Local Turístico</h3>
+        </div>
+        <div class="card">
+          <h3>Portal de Notícias</h3>
+        </div>
+        <div class="card">
+          <h3>Caça ao Tesouro</h3>
+        </div>
+        <div class="card">
+          <h3>Câmbio de moeda</h3>
+        </div>
+        <div class="card">
+          <h3>Reembolso para funcionários</h3>
+        </div>
       </div>
     </section>
 

@@ -34,6 +34,20 @@ body {
   background-color: #16181d;
 }
 
+/*================
+Utilitários
+=================*/
+
+
+.flex {
+  display: flex;
+}
+
+
+/*================
+Introdução
+=================*/
+
 header {
   height: 750px;
   background-image:
@@ -41,12 +55,7 @@ header {
   background-size: 100%;
 }
 
-/*================
-    Introdução
-=================*/
-
 #introduction {
-  display: flex;
   flex-direction: column;
   align-items: center;
   padding: 130px 163px 183px;
@@ -106,13 +115,11 @@ div+p strong {
 }
 
 .tech {
-  display: flex;
   flex-direction: row;
   gap: 16px;
 }
 
 .tech .tag {
-  display: flex;
   align-items: center;
   align-content: center;
   padding: 8px 16px;
@@ -129,6 +136,7 @@ div+p strong {
   margin-right: 8px;
 }
 
+
 #github {
   color: rgba(191, 196, 207, 0.484);
 }
@@ -141,9 +149,6 @@ div+p strong {
   box-shadow: 0px 4px 16px var(--gray-200);
   color: var(--gray-200);
 }
-
-#foto {}
-
 
 #html {
   color: rgba(227, 100, 110, 0.484);
@@ -198,8 +203,25 @@ div+p strong {
   color: var(--gray-300);
 }
 
-.tech:hover~#down,
-.fotoContainer:hover~#down,
-#down:hover {
+/*Acrescentar brilho maior e efeito ao clicar os botões*/
+
+/*================
+Projetos
+=================*/
+
+
+#projects {
+  margin: 72px 120px 144px;
+  flex-direction: column;
+  align-items: center;
+}
+
+#projects p {
+  color: var(--green);
+  text-shadow: 0px 4px 16px var(--green);
+  margin-bottom: 8px;
+}
+
+#projects h2 {
   color: var(--gray-200);
 }
