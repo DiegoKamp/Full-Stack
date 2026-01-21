@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -204,6 +205,7 @@ div+p strong {
 }
 
 /*Acrescentar brilho maior e efeito ao clicar os botões*/
+/*Mudar os projetos em destaque de acordo com a tecnologia utilizada*/
 
 /*================
 Projetos
@@ -216,12 +218,64 @@ Projetos
   align-items: center;
 }
 
-#projects p {
+#projects>p {
   color: var(--green);
   text-shadow: 0px 4px 16px var(--green);
   margin-bottom: 8px;
 }
 
 #projects h2 {
+  color: var(--gray-200);
+}
+
+#projects .cardCollection {
+  margin-top: 56px;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+#projects .card {
+  padding: 15px;
+  background-color: var(--gray-400);
+  border: 1px solid var(--gray-400);
+
+  border-radius: 12px;
+  width: 330px;
+  height: 280px;
+}
+
+#projects .card:hover {
+  border: 1px solid var(--gray-300);
+  box-shadow: 0px 4px 16px var(--gray-200);
+}
+
+
+
+#projects .card .flex {
+  justify-content: center;
+}
+
+#projects img {
+  height: 156px;
+  width: 290px;
+  object-fit: cover;
+  border: 1px solid var(--gray-300);
+  border-radius: 8px;
+}
+
+#projects .desc {
+  margin: 20px 12px 17px 12px;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+}
+
+#projects .desc h3 {
+  color: var(--gray-100);
+}
+
+#projects .desc p {
   color: var(--gray-200);
 }
