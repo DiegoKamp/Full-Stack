@@ -83,6 +83,11 @@ header {
   box-sizing: border-box;
 }
 
+#foto:hover {
+  scale: 1.15;
+}
+
+
 #introduction img+svg {
   position: absolute;
   bottom: -5px;
@@ -251,8 +256,6 @@ Projetos
   box-shadow: 0px 4px 16px var(--gray-200);
 }
 
-
-
 #projects .card .flex {
   justify-content: center;
 }
@@ -278,4 +281,73 @@ Projetos
 
 #projects .desc p {
   color: var(--gray-200);
+}
+
+/*================
+Meus serviços
+=================*/
+
+#services {
+  background-color: var(--gray-600);
+  padding-top: 88px;
+}
+
+.services {
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px;
+  /* border: 1px solid red; */
+}
+
+#services>p {
+  color: var(--green);
+  text-shadow: 0px 4px 16px var(--green);
+  text-align: center;
+}
+
+#services>h2 {
+  color: var(--gray-100);
+  margin-bottom: 56px;
+  text-align: center;
+}
+
+.services div {
+  width: 280px;
+  height: 155px;
+  margin-bottom: 120px;
+  border: 1px solid var(--gray-500);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+#devices svg {
+  color: var(--purple);
+}
+
+#network svg {
+  color: var(--yellow);
+}
+
+.services h3 {
+  margin-top: 20px;
+  margin-bottom: 8px;
+  color: var(--gray-100);
+}
+
+.services p {
+  color: var(--gray-200);
+}
+
+
+#contact {
+  height: 880px;
+  background-image: url(./assets/Background_Contacts.png);
+  background-size: 100%;
+  padding: 128px;
+}
+
+#contact p {
+  color: var(--green);
+  text-shadow: 0px 4px 16px var(--green);
+  text-align: center;
 }
