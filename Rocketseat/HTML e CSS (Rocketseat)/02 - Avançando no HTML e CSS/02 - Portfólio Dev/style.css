@@ -346,6 +346,7 @@ Meus serviços
 }
 
 #services>p {
+  font: var(--subtitle);
   color: var(--green);
   text-shadow: 0px 4px 16px var(--green);
   text-align: center;
@@ -353,6 +354,7 @@ Meus serviços
 }
 
 #services>h2 {
+  font: var(--title-md);
   color: var(--gray-100);
   margin-bottom: 56px;
   text-align: center;
@@ -397,12 +399,14 @@ Contato
 }
 
 #contact h3 {
+  font: var(--subtitle);
   color: var(--green);
   text-shadow: 0px 4px 16px var(--green);
   text-align: center;
 }
 
 #contact h2 {
+  font: var(--title-md);
   margin: 8px;
   color: var(--gray-100);
   text-align: center;
