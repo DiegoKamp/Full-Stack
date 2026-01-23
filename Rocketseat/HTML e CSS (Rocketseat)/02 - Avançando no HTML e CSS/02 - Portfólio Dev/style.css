@@ -303,6 +303,7 @@ Meus serviços
   color: var(--green);
   text-shadow: 0px 4px 16px var(--green);
   text-align: center;
+  margin-bottom: 8px;
 }
 
 #services>h2 {
@@ -338,6 +339,9 @@ Meus serviços
   color: var(--gray-200);
 }
 
+/*================
+Contato
+=================*/
 
 #contact {
   height: 880px;
@@ -359,7 +363,6 @@ Meus serviços
 }
 
 #contact p {
-  margin: 8px;
   color: var(--gray-200);
   text-align: center;
   margin-bottom: 48px;
@@ -374,6 +377,15 @@ Meus serviços
 
 .socialMedia a {
   text-decoration: none;
+}
+
+.socialMedia a div:hover {
+  box-shadow: 0px 4px 16px var(--blue);
+  color: var(--blue);
+}
+
+.socialMedia div:hover svg {
+  color: var(--blue);
 }
 
 .socialMedia div {
