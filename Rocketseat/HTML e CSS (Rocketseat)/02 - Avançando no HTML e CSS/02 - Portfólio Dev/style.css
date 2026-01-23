@@ -346,8 +346,51 @@ Meus serviços
   padding: 128px;
 }
 
-#contact p {
+#contact h3 {
   color: var(--green);
   text-shadow: 0px 4px 16px var(--green);
   text-align: center;
+}
+
+#contact h2 {
+  margin: 8px;
+  color: var(--gray-100);
+  text-align: center;
+}
+
+#contact p {
+  margin: 8px;
+  color: var(--gray-200);
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.socialMedia {
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+  align-items: center;
+}
+
+.socialMedia a {
+  text-decoration: none;
+}
+
+.socialMedia div {
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: var(--gray-400);
+
+  width: 400px;
+  height: 68px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  color: var(--gray-200);
+}
+
+.socialMedia div svg {
+  color: var(--gray-300);
 }
