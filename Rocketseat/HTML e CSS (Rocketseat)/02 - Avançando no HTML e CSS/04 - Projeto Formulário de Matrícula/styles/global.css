@@ -46,14 +46,15 @@
   ==========*/
   /* font-style font-weight font-size font-family */
 
-  --heading1: normal 700 32px/1.2 "Poppins", sans-serif;
-  --heading2: normal 700 24px/1.2 "Poppins", sans-serif;
-  --heading3: normal 700 20px/1.2 "Poppins", sans-serif;
-  --heading4: normal 700 16px/1.2 "Poppins", sans-serif;
+  --heading1: normal 700 2rem/1.2 "Poppins", sans-serif;
+  --heading2: normal 700 1.5rem/1.2 "Poppins", sans-serif;
+  --heading3: normal 700 1.25rem/1.2 "Poppins", sans-serif;
+  --heading4: normal 700 1rem/1.2 "Poppins", sans-serif;
 
+  --text: normal 400 1rem/1.5 "Poppins", sans-serif;
+  --text-sm: normal 400 0.875rem/1.4 "Poppins", sans-serif;
+}
 
-
-
-
-
+body {
+  overflow: hidden;
 }
