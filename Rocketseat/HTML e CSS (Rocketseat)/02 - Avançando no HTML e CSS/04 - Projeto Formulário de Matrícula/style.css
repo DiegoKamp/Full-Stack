@@ -1,0 +1,59 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+
+  /*==========
+      Cores
+  ==========*/
+
+  /*Brand Color*/
+  --brand-light: #F67841;
+  --brand-mid: #F3541C;
+  --brand-dark: #E43A12;
+
+  /*Text Color*/
+  --text-primary: #292524;
+  --text-secondary: #57534E;
+  --text-tertiary: #8F8881;
+  --text-highlight: #E43A12;
+
+  /*Surface Color*/
+  --surface-primary: #FFFFFF;
+  --surface-secondary: #FEE7D6;
+  --surface-disabled: #E7E5E4;
+
+  /*Stroke Color*/
+  --stroke-default: #D6D3D1;
+  --stroke-highlight: #F3541C;
+
+  /*Semantic*/
+  --semantic-error: #DC2626;
+
+  /*Supporting*/
+  --orange: #F9A474;
+  --yellow: #FEDF6F;
+  --green: #C7D78D;
+  --blue: #B8CEDC;
+  --violet: #C3B2E7;
+  --pink: #F682A5;
+
+  /*==========
+      Tipografia
+  ==========*/
+  /* font-style font-weight font-size font-family */
+
+  --heading1: normal 700 32px/1.2 "Poppins", sans-serif;
+  --heading2: normal 700 24px/1.2 "Poppins", sans-serif;
+  --heading3: normal 700 20px/1.2 "Poppins", sans-serif;
+  --heading4: normal 700 16px/1.2 "Poppins", sans-serif;
+
+
+
+
+
+
+}
