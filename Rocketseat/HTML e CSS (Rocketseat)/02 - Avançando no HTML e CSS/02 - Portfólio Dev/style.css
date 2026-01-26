@@ -81,6 +81,7 @@ header {
   object-position: center top;
   border: var(--green) solid 2px;
   box-sizing: border-box;
+  transition: 0.5s;
 }
 
 #foto:hover {
@@ -151,6 +152,7 @@ div+p strong {
 Introdução - Botões*/
 
 #github {
+  transition: 0.5s;
   color: rgba(191, 196, 207, 0.484);
 }
 
@@ -170,6 +172,7 @@ Introdução - Botões*/
 }
 
 #html {
+  transition: 0.5s;
   color: rgba(227, 100, 110, 0.484);
 }
 
@@ -189,6 +192,7 @@ Introdução - Botões*/
 }
 
 #css {
+  transition: 0.5s;
   color: rgba(57, 148, 219, 0.484);
 }
 
@@ -207,8 +211,8 @@ Introdução - Botões*/
   color: var(--blue);
 }
 
-
 #js {
+  transition: 0.5s;
   color: rgba(234, 191, 97, 0.484);
 }
 
@@ -228,6 +232,7 @@ Introdução - Botões*/
 }
 
 #others {
+  transition: 0.5s;
   color: rgba(129, 188, 78, 0.484);
 }
 
@@ -247,7 +252,10 @@ Introdução - Botões*/
   color: var(--gray-300);
 }
 
-/*Acrescentar brilho maior e efeito ao clicar os botões*/
+html {
+  scroll-behavior: smooth;
+}
+
 /*Mudar os projetos em destaque de acordo com a tecnologia utilizada*/
 
 
