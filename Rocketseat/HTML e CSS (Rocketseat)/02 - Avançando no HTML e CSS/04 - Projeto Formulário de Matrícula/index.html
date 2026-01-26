@@ -30,8 +30,11 @@
         <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
 
         <form method="post" enctype="multipart/form-data">
+
+
           <fieldset id="child-info">
             <legend>Informações da criança</legend>
+
             <div class="input-wrapper">
               <label for="fullName">Nome Completo</label>
               <input id="fullName" name="fullName" type="text" placeholder="Qual é o nome da criança?">
@@ -52,19 +55,169 @@
             </div>
 
             <div class="textarea-wrapper">
-              <label for="medical-info">Informações médicas</label>
-              <textarea id="medical-info" name="medical-info"
+              <label for="medicalInfo">Informações médicas</label>
+              <textarea id="medicalInfo" name="medicalInfo"
                 placeholder="Escreva aqui, caso haja, as intolerâncias/restrições alimentares, medicamentos de uso contínuos e outras observações médicas relevantes."
                 cols="30" rows="10"></textarea>
             </div>
 
             <div class="droparea-wrapper">
-              <input id="birth-file" name="birth-file" type="file">
+              <input id="birthFile" name="birthFile" type="file">
               <img src="./assets/icons/cloud-upload.svg" alt="">
               <p>Clique aqui para <br> selecionar arquivos</p>
             </div>
 
           </fieldset>
+
+
+          <fieldset id="address-info">
+            <legend>Endereço Residencial</legend>
+
+            <div class="input-wrapper">
+              <label for="postalCode">CEP</label>
+              <input id="postalCode" name="postalCode" type="text" placeholder="123456-789">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="street">Rua</label>
+              <input id="street" name="street" type="text" placeholder="Rua">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="city">Cidade</label>
+              <input id="city" name="city" type="text" placeholder="Cidade">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="Estate">UF</label>
+              <input id="Estate" name="Estate" type="text" placeholder="Estado">
+            </div>
+
+          </fieldset>
+
+
+          <fieldset id="parents-info">
+            <legend>Informações do Responsável</legend>
+
+            <div class="input-wrapper">
+              <label for="parentName">Nome do Responsável</label>
+              <input type="text" id="parentName" name="parentName" placeholder="Nome completo do Responsável">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="parentCell">Telefone</label>
+              <input type="text" id="parentCell" name="parentCell" placeholder="(10) 98765-4321">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="parentEmail">E-mail</label>
+              <input type="text" id="parentEmail" name="parentEmail" placeholder="(10) 98765-4321">
+            </div>
+
+          </fieldset>
+
+
+          <fieldset id="optionals-Mat">
+            <legend>Opções de Matrícula</legend>
+
+            <label for="">Selecione o turno do estudo</label>
+            <div class="optionsImg">
+
+              <div class="shift">
+                <input type="radio" id="mourning" name="shift" value="mourning" checked>
+                <label for="mourning">
+                  Manhã
+                  <img src="./assets/icons/sun-cloud-02.svg" alt="">
+                </label>
+              </div>
+
+              <div class="shift">
+                <input type="radio" id="afternoon" name="shift" value="afternoon">
+                <label for="afternoon">
+                  Tarde
+                  <img src="./assets/icons/sun-02.svg" alt="">
+                </label>
+              </div>
+            </div>
+
+            <label for="">Em qual esporte você gostaria de inscrever seu filho?</label>
+            <div class="optionsImg">
+
+              <div class="sport">
+                <input type="radio" id="football" name="sport" value="football">
+                <label for="football">
+                  Futebol
+                  <img src="./assets/icons/football.svg" alt="">
+                </label>
+              </div>
+
+              <div class="sport">
+                <input type="radio" id="basketball" name="sport" value="basketball">
+                <label for="basketball">
+                  Basquete
+                  <img src="./assets/icons/basketball-02.svg" alt="">
+                </label>
+              </div>
+
+              <div class="sport">
+                <input type="radio" id="swimming" name="sport" value="swimming">
+                <label for="swimming">
+                  Natação
+                  <img src="./assets/icons/swimming.svg" alt="">
+                </label>
+              </div>
+
+              <div class="sport">
+                <input type="radio" id="yoga" name="sport" value="yoga">
+                <label for="yoga">
+                  Yoga
+                  <img src="./assets/icons/yoga-02.svg" alt="">
+                </label>
+              </div>
+
+              <div class="sport">
+                <input type="radio" id="volleyball" name="sport" value="volleyball">
+                <label for="volleyball">
+                  Volley
+                  <img src="./assets/icons/volleyball.svg" alt="">
+                </label>
+              </div>
+
+              <div class="sport">
+                <input type="radio" id="boxing" name="sport" value="boxing">
+                <label for="boxing">
+                  Box
+                  <img src="./assets/icons/boxing-glove-01.svg" alt="">
+                </label>
+              </div>
+
+            </div>
+
+
+
+          </fieldset>
+
+          <div>
+            <input id="accept" name="accept" type="checkbox">
+            <label for="accept"> Declaro que li e concordo com os <a href="">Termos e Condições</a> e com a <a
+                href="">Política de Privacidade</a> da escola Estrela do Amanhã. </label>
+          </div>
+
+          <div>
+            <button>
+
+              Salvar Respostas
+            </button>
+
+            <button>
+              Fazer Matrícula
+
+            </button>
+
+          </div>
+
+
+
 
         </form>
 
