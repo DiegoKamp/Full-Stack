@@ -24,3 +24,39 @@ select:focus {
   outline-offset: 0.1px;
   /*Macete para incluir o efeito border no navegador safari*/
 }
+
+input[type="date"] {
+  position: relative;
+
+  /*
+  Não vai funcionar em todos os navegadores 
+  &::-webkit-calendar-picker-indicator {
+    position: absolute;
+    background: url(../../assets/icons/calendar-03.svg) center/contain;
+    right: 1rem;
+  } */
+
+  &::-webkit-calendar-picker-indicator {
+    /* display: none; Se usado, a imagem do calendário perderá a funcionalidade. Por isso usaremos opacidade zero*/
+    opacity: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: url(../../assets/icons/calendar-03.svg) center/contain;
+    right: 1rem;
+    width: 1.25rem;
+    height: 1.25rem;
+
+    /*Alinhamento vertical da imagem*/
+    top: 50%;
+    /*Coloca o topo da imagem em 50% do começo*/
+    transform: translateY(-50%);
+    /*Sobe 50% da imagem*/
+  }
+}
+
+select {
+  background: url(../../assets/icons/arrow-down-01.svg) no-repeat calc(100% - 0.75rem);
+}
