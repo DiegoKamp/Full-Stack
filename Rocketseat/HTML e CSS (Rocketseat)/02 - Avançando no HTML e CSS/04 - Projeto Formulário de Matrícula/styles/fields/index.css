@@ -1,0 +1,26 @@
+input,
+textarea,
+select {
+  appearance: none;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--stroke-default);
+  padding: 0.75rem 1rem;
+  font: var(--text);
+}
+
+label {
+  font: var(--text-sm);
+  color: var(--text-secondary);
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 0.25rem solid var(--surface-secondary);
+  border: 0.125rem solid var(--stroke-highlight);
+  outline-offset: 0.1px;
+  /*Macete para incluir o efeito border no navegador safari*/
+}

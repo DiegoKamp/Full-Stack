@@ -46,13 +46,21 @@
   ==========*/
   /* font-style font-weight font-size font-family */
 
-  --heading1: normal 700 2rem/1.2 "Poppins", sans-serif;
-  --heading2: normal 700 1.5rem/1.2 "Poppins", sans-serif;
-  --heading3: normal 700 1.25rem/1.2 "Poppins", sans-serif;
-  --heading4: normal 700 1rem/1.2 "Poppins", sans-serif;
+  --fonts: "Poppins", sans-serif;
 
-  --text: normal 400 1rem/1.5 "Poppins", sans-serif;
-  --text-sm: normal 400 0.875rem/1.4 "Poppins", sans-serif;
+  /*
+  Poderia ser assim:
+  --heading1: normal 700 2rem/1.2 "Poppins", sans-serif;
+  Mas caso haja necessidade de incluir uma estilização diferente de tamanho e altura da linha, mas manter a fonte, usamos uma declaração de fonte.
+  */
+
+  --heading1: normal 700 2rem/1.2 var(--fonts);
+  --heading2: normal 700 1.5rem/1.2 var(--fonts);
+  --heading3: normal 700 1.25rem/1.2 var(--fonts);
+  --heading4: normal 700 1rem/1.2 var(--fonts);
+
+  --text: normal 400 1rem/1.5 var(--fonts);
+  --text-sm: normal 400 0.875rem/1.4 var(--fonts);
 }
 
 body {
