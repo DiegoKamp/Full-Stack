@@ -1,0 +1,49 @@
+.dropzone {
+  border: 0.125rem dashed var(--stroke-default);
+  border-radius: 0.25rem;
+  padding: 1.75rem 1rem;
+
+  display: grid;
+  gap: 0.5rem;
+  justify-items: center;
+  text-align: center;
+
+  position: relative;
+
+  & input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    /*Não vejo o porquê usar "inset: 0;" se já está em position absolute e vai colocar invisível com "opacity: 0;"*/
+    opacity: 0;
+  }
+
+  & svg {
+    inset: 28px 50%;
+    width: 3rem;
+    height: 3rem;
+    color: var(--stroke-default);
+  }
+
+  & p {
+    color: #A8A29E;
+  }
+
+  /*&:has(input:focus) Utilizando o Tab para alterar entre os campos, quando chegar a esse campo, fará o mesmo que quando o mouse passar. Melhora a acessibilidade??*/
+  &:hover,
+  &:has(input:focus) {
+    border: 0.125rem dashed var(--stroke-highlight);
+    background-color: var(--surface-secondary);
+
+    & svg path {
+      stroke: var(--brand-light);
+    }
+
+    & p {
+      color: var(--text-tertiary);
+    }
+
+  }
+
+}

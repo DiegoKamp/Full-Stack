@@ -1,3 +1,6 @@
+/*Indexado no forms.css*/
+@import url(./droparea.css);
+
 input,
 textarea,
 select {
@@ -16,9 +19,11 @@ label {
   margin-bottom: 0.25rem;
 }
 
+/*input[type="date"]:focus-within foco em qualquer elemento no campo input (funcionando com a figura do calendário*/
 input:focus,
 textarea:focus,
-select:focus {
+select:focus,
+input[type="date"]:focus-within {
   outline: 0.25rem solid var(--surface-secondary);
   border: 0.125rem solid var(--stroke-highlight);
   outline-offset: 0.1px;
