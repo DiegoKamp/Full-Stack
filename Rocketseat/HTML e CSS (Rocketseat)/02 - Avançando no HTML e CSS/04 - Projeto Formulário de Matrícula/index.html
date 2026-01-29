@@ -92,19 +92,28 @@
               <input id="postalCode" name="postalCode" type="text" placeholder="123456-789">
             </div>
 
-            <div class="input-wrapper">
-              <label for="street">Rua</label>
-              <input id="street" name="street" type="text" placeholder="Rua">
+
+            <div class="flex">
+              <div class="input-wrapper flex-2">
+                <label for="street">Rua</label>
+                <input id="street" name="street" type="text" value="Rua das Flores" disabled>
+              </div>
+              <div class="input-wrapper flex-1">
+                <label for="number">Número</label>
+                <input id="number" name="number" type="number" placeholder="123">
+              </div>
             </div>
 
-            <div class="input-wrapper">
-              <label for="city">Cidade</label>
-              <input id="city" name="city" type="text" placeholder="Cidade">
-            </div>
 
-            <div class="input-wrapper">
-              <label for="Estate">UF</label>
-              <input id="Estate" name="Estate" type="text" placeholder="Estado">
+            <div class="flex">
+              <div class="input-wrapper flex-2">
+                <label for="city">Cidade</label>
+                <input id="city" name="city" type="text" value="São Paulo" disabled>
+              </div>
+              <div class="input-wrapper flex-1">
+                <label for="Estate">UF</label>
+                <input id="Estate" name="Estate" type="text" value="SP" disabled>
+              </div>
             </div>
 
           </fieldset>

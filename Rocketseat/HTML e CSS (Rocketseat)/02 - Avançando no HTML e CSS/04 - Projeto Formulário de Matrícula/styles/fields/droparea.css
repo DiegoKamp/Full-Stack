@@ -36,6 +36,7 @@
     border: 0.125rem dashed var(--stroke-highlight);
     background-color: var(--surface-secondary);
 
+    /*Outra forma de mudar a cor*/
     & svg path {
       stroke: var(--brand-light);
     }
