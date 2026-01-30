@@ -119,22 +119,27 @@
           </fieldset>
 
 
-          <fieldset id="parents-info">
+          <fieldset id="guardian-info">
             <legend>Informações do Responsável</legend>
 
             <div class="input-wrapper">
               <label for="parentName">Nome do Responsável</label>
-              <input type="text" id="parentName" name="parentName" placeholder="Nome completo do Responsável">
+              <input type="text" id="guardianName" name="guardianName" placeholder="Nome completo do Responsável">
+              <small>Principal responsável legal e contato de emergência</small>
             </div>
 
             <div class="input-wrapper">
-              <label for="parentCell">Telefone</label>
-              <input type="text" id="parentCell" name="parentCell" placeholder="(10) 98765-4321">
+              <label for="guardianPhone">Telefone</label>
+              <input type="tel" id="guardianPhone" name="guardianPhone" placeholder="(10) 98765-4321">
             </div>
 
             <div class="input-wrapper">
-              <label for="parentEmail">E-mail</label>
-              <input type="text" id="parentEmail" name="parentEmail" placeholder="(10) 98765-4321">
+              <label for="guardianEmail">E-mail</label>
+              <input type="email" id="guardianEmail" name="guardianEmail" placeholder="seu@email.com" required>
+              <div class="error">
+                <img src="./assets/icons/alert-circle.svg" alt="ícone de alerta vermelho"><span>Insira um e-mail
+                  válido</span>
+              </div>
             </div>
 
           </fieldset>
