@@ -31,7 +31,6 @@
 
         <form method="post" enctype="multipart/form-data">
 
-
           <fieldset id="child-info">
             <legend>Informações da criança</legend>
 
@@ -83,7 +82,6 @@
 
           </fieldset>
 
-
           <fieldset id="address-info">
             <legend>Endereço Residencial</legend>
 
@@ -118,7 +116,6 @@
 
           </fieldset>
 
-
           <fieldset id="guardian-info">
             <legend>Informações do Responsável</legend>
 
@@ -144,92 +141,35 @@
 
           </fieldset>
 
+          <fieldset id="enroll-options">
+            <legend>Opções de matrícula</legend>
 
-          <fieldset id="optionals-Mat">
-            <legend>Opções de Matrícula</legend>
+            <div class="input-wrapper">
+              <label>Selecione o turno de estudo</label>
+              <div class="radio-wrapper">
 
-            <label for="">Selecione o turno do estudo</label>
-            <div class="optionsImg">
+                <div class="radio-inner">
+                  <div class="radio-image"></div>
+                  <input type="radio" name="study-shift" value="mourning" id="mourning">
+                  <img src="./assets/icons/sun-cloud-02.svg" alt="Ícone de Sol com nuvem">
+                  <label for="mourning">Manhã</label>
+                </div>
 
-              <div class="shift">
-                <input type="radio" id="mourning" name="shift" value="mourning" checked>
-                <label for="mourning">
-                  Manhã
-                  <img src="./assets/icons/sun-cloud-02.svg" alt="">
-                </label>
+                <div class="radio-inner">
+                  <div class="radio-image"></div>
+                  <input type="radio" name="study-shift" value="afternoon" id="afternoon">
+                  <img src="./assets/icons/sun-02.svg" alt="Ícone de Sol">
+                  <label for="afternoon">Tarde</label>
+                </div>
+
               </div>
-
-              <div class="shift">
-                <input type="radio" id="afternoon" name="shift" value="afternoon">
-                <label for="afternoon">
-                  Tarde
-                  <img src="./assets/icons/sun-02.svg" alt="">
-                </label>
-              </div>
-            </div>
-
-            <label for="">Em qual esporte você gostaria de inscrever seu filho?</label>
-            <div class="optionsImg">
-
-              <div class="sport">
-                <input type="radio" id="football" name="sport" value="football">
-                <label for="football">
-                  Futebol
-                  <img src="./assets/icons/football.svg" alt="">
-                </label>
-              </div>
-
-              <div class="sport">
-                <input type="radio" id="basketball" name="sport" value="basketball">
-                <label for="basketball">
-                  Basquete
-                  <img src="./assets/icons/basketball-02.svg" alt="">
-                </label>
-              </div>
-
-              <div class="sport">
-                <input type="radio" id="swimming" name="sport" value="swimming">
-                <label for="swimming">
-                  Natação
-                  <img src="./assets/icons/swimming.svg" alt="">
-                </label>
-              </div>
-
-              <div class="sport">
-                <input type="radio" id="yoga" name="sport" value="yoga">
-                <label for="yoga">
-                  Yoga
-                  <img src="./assets/icons/yoga-02.svg" alt="">
-                </label>
-              </div>
-
-              <div class="sport">
-                <input type="radio" id="volleyball" name="sport" value="volleyball">
-                <label for="volleyball">
-                  Volley
-                  <img src="./assets/icons/volleyball.svg" alt="">
-                </label>
-              </div>
-
-              <div class="sport">
-                <input type="radio" id="boxing" name="sport" value="boxing">
-                <label for="boxing">
-                  Box
-                  <img src="./assets/icons/boxing-glove-01.svg" alt="">
-                </label>
-              </div>
-
             </div>
 
 
 
           </fieldset>
 
-          <div>
-            <input id="accept" name="accept" type="checkbox">
-            <label for="accept"> Declaro que li e concordo com os <a href="">Termos e Condições</a> e com a <a
-                href="">Política de Privacidade</a> da escola Estrela do Amanhã. </label>
-          </div>
+
 
         </form>
 
