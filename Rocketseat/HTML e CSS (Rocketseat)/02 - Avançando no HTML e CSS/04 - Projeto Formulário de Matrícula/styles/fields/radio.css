@@ -2,14 +2,12 @@ label+.radio-wrapper {
   margin-top: 1rem;
 }
 
-
 .radio-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
   /*Repetir automaticamente a largura que for necessária para encaixar, mas eu quero o mínimo de 7.5rem e o máximo do quanto for necessário*/
   gap: 1rem;
 }
-
 
 .radio-inner {
   display: grid;
@@ -56,5 +54,4 @@ label+.radio-wrapper {
       background-image: url(../../assets/icons/circle-selected.svg);
     }
   }
-
 }
