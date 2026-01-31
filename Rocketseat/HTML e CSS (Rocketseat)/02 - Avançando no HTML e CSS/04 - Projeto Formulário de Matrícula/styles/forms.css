@@ -28,3 +28,9 @@ fieldset+fieldset {
 .flex-1 {
   flex: 1;
 }
+
+.actions-wrapper {
+  margin-top: 3rem;
+  display: flex;
+  gap: 1rem;
+}

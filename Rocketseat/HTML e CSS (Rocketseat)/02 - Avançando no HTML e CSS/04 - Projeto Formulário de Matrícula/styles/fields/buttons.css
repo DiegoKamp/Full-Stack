@@ -1,0 +1,34 @@
+button {
+  all: unset;
+  font-weight: 500;
+  color: var(--text-highlight);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+
+  cursor: pointer;
+
+  &.btn-primary {
+    color: white;
+    background-color: var(--brand-dark);
+
+    &:hover,
+    &:focus {
+      background-color: var(--brand-mid);
+    }
+  }
+
+  &.btn-secondary {
+    color: var(--text-highlight);
+    background-color: var(--surface-primary);
+    border: 1px solid var(--text-highlight);
+    margin-left: auto;
+
+    &:hover,
+    &:focus {
+      color: var(--brand-dark);
+      outline: 0.25rem solid var(--surface-secondary);
+      border: 1px solid var(--stroke-highlight);
+      outline-offset: 0.1px;
+    }
+  }
+}
