@@ -13,7 +13,8 @@ label+.radio-wrapper {
   display: grid;
   justify-items: center;
 
-  border: 1px solid var(--stroke-default);
+  border: 2px solid transparent;
+  outline: 1px solid var(--stroke-default);
   border-radius: 0.5rem;
   gap: 0.5rem;
   padding: 2rem 0.5rem 0.5rem;
