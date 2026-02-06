@@ -1,0 +1,53 @@
+/*
+Transform
+translate(): muda a posição x,y do elemento
+rotate()
+scale()
+*/
+
+.transform {
+  width: 5rem;
+  height: 5rem;
+  border: 1px solid red;
+  transform:
+    translate(5rem, -1rem) rotate(45deg) scale(2);
+}
+
+/*
+Funções Matemáticas
+
+Basic Arithmetic
+  calc()
+    Cálculos matemáticos e/ou diferentes unidades
+Comparison
+  min()
+  max()
+  clamp()
+    Três valores: O mínimo, o desejado e o máximo
+    Onde ela brilha:
+Tipografia Fluida: Permite que o texto aumente ou diminua suavemente entre um limite mínimo e máximo conforme a largura da tela.
+Espaçamentos (Margins e Paddings): Ótimo para manter margens proporcionais em diferentes dispositivos sem que elas fiquem gigantes em desktops ou minúsculas em celulares.
+Larguras de Containers: Útil para definir larguras que se adaptam, mas nunca ultrapassam um limite que prejudique a leitura.
+    Cuidados Importantes:
+Acessibilidade: Ao usar clamp() em fontes, evite usar apenas unidades de viewport (como vw). Sempre misture com unidades fixas (ex: clamp(1rem, 2vw + 1rem, 3rem)) para garantir que o usuário ainda consiga dar zoom manual no navegador.
+Complexidade de Manutenção: Aplicar clamp() em absolutamente tudo pode tornar o código difícil de ler e debugar. Use em propriedades-chave que realmente precisam de fluidez.
+Layouts Complexos: O clamp() não substitui sistemas de grid ou flexbox para a estrutura principal da página, ele apenas refina os valores dessas propriedades.
+Outras
+  Trigonometry: sin(), cos(), tan()
+  Exponencial: pow(), sqrt()
+*/
+
+.calc1 {
+  border: 1px solid red;
+  width: calc(20% + 2rem);
+  height: min(10vh, 6rem);
+}
+
+
+.calc2 {
+  border: 1px solid red;
+  margin-top: 2rem;
+  width: max(20%, 2rem);
+  height: 8rem;
+  font-size: clamp(1rem, 10vw, 2rem);
+}
